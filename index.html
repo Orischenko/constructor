@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Print Constructor</title>
+
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.1/css/bootstrap.css">
+    <link rel="stylesheet" href="fonts/material-icons/css/material-icons.css">
+
+    <!--LoDash-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.2/lodash.min.js"></script>
+
+    <script src="build.js" defer></script>
+</head>
+<body>
+    <div id="content">
+        <div class="container">
+            <div id="print-constructor">
+                <h2>Print Constructor</h2>
+                <div class="row">
+
+                    <!--Sidebar left-->
+                    <div class="col-lg-3">
+                        <section class="sidebar-left">
+                            <div class="box" data-component="chooseBase">
+                                <h6>Choose base</h6>
+                            </div>
+
+                            <div class="box" data-component="chooseColor">
+                                <h6>Choose color</h6>
+                            </div>
+
+                            <div class="box" data-component="choosePrint">
+                                <h6>Choose prints</h6>
+
+                                <div class="prints" data-element="prints"></div>
+                            </div>
+                        </section>
+                    </div>
+                    <!--end Sidebar left-->
+
+                    <!--Content-->
+                    <div class="col-lg-6">
+                        <section class="content">
+                            <div class="box">
+                                <h6>View Container</h6>
+                                <div data-component="viewContainer">
+
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <!--end Content-->
+
+                    <!--Sidebar right-->
+                    <div class="col-lg-3">
+                        <section class="sidebar-right">
+                            <div class="box" data-component="layersContainer">
+                                <h6>Layers</h6>
+                            </div>
+                        </section>
+                    </div>
+                    <!--end Sidebar right-->
+
+                </div>
+            </div>
+        </div>
+    </div>
+<script type="js/template" id="constructor-base-template">
+    <ul class="base-items" data-element="baseItems">
+
+        <% baseItems.forEach((item) => { %>
+            <li data-element="baseContainer" data-base-id="<%=item.id%>">
+                <a href="#!/print-constructor/<%=item.id%>" data-element="baseLink">
+                    <figure>
+                        <img alt="<%=item.id%>" src="<%=item.imageUrl%>">
+                    </figure>
+                </a>
+            </li>
+        <% }); %>
+
+    </ul>
+</script>
+<script type="js/template" id="constructor-viewer-template">
+    <figure><img alt="<%=item.id%>" src="<%=item.imageUrl%>"></figure>
+</script>
+<script type="js/template" id="constructor-prints-template">
+    <ul class="tabs">
+        <li><a href="#!/print-constructor" data-tab-element="tabLink" data-tab-id="tab0" class="active">Image print</a></li>
+        <li><a href="#!/print-constructor" data-tab-element="tabLink" data-tab-id="tab1">Text print</a></li>
+    </ul>
+
+    <div class="all_tabs">
+        <div data-tab-element="tab" data-content-id="tab0" data-element="printImages">
+            <ul class="prints">
+                <% prints.forEach((print) => { %>
+                    <li data-element="printContainer" data-print-id="<%=print.id%>">
+                        <figure><a href="#!/print-constructor/<%=print.id%>" data-element="printLink"><img alt="<%=print.id%>" src="<%=print.imageUrl%>"></a></figure>
+                    </li>
+                <% }); %>
+            </ul>
+        </div>
+        <div data-tab-element="tab" data-content-id="tab1" data-element="printText">
+            <input type="text" data-element="field">
+        </div>
+    </div>
+</script>
+</body>
+</html>
