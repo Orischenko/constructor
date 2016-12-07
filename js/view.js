@@ -16,9 +16,34 @@ class PageView{
     }
 
     _render(item) {
-        this._el.innerHTML = this._compiledTemplate({
-            item: item
+        this._renderService(item, {
+            element: this._el.querySelector('[data-element="base-print-container"]'),
+
+            success: (el) => {
+                el.innerHTML = this._compiledTemplate({
+                    item: item
+                });
+            }
         });
+    }
+
+    _renderDrug(item) {
+        this._renderService(item, {
+            element: this._el.querySelector('[data-element="drop-print-container"]'),
+
+            success: (el) => {
+                el.innerHTML += this._compiledTemplate({
+                    item: item
+                });
+            }
+        });
+    }
+
+    //a general method for creating viewer dom
+    _renderService(item, options) {
+        let el = options.element;
+
+        options.success(el);
     }
 }
 

@@ -36,6 +36,20 @@ h2,h3,h4,h5,h6 {
   color: $itemColorSecondary;
 }
 
+input {
+  width: 100%;
+  border: 1px solid #ccc;
+  -webkit-transition: all .35s ease;
+  -o-transition: all .35s ease;
+  transition: all .35s ease;
+
+  &:focus {
+    outline: none;
+    box-shadow: none;
+    border-bottom-color: $itemColorPrimary;
+  }
+}
+
 #content {
   padding: 30px 0;
 }
@@ -102,9 +116,32 @@ ul {
     border: 1px solid #fff;
     width: 70px;
     margin: 0 20px;
+    -webkit-transition: all .35s ease;
+    -o-transition: all .35s ease;
+    transition: all .35s ease;
 
     &.active {
       border: 1px solid $itemColorPrimary;
+    }
+  }
+}
+
+.viewContainer {
+  position: relative;
+
+  #drop-print-container {
+    //background: rgba(255, 0, 0, .5);
+    position: absolute;
+    top: 85px;
+    bottom: 40px;
+    left: 145px;
+    right: 145px;
+
+    > figure {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
     }
   }
 }

@@ -1,2 +1,2 @@
-# Print Constructor
+# Constructor
 Single Page Application

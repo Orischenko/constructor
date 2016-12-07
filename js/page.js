@@ -12,7 +12,7 @@ let PageColor = require('./color');
 let PageView = require('./view');
 let PageLayers = require('./layers');
 
-let defaultProjects = [
+let defaultBases = [
     {
         "age": 0,
         "id": "white-t-shirt",
@@ -22,7 +22,7 @@ let defaultProjects = [
     {
         "age": 1,
         "id": "white-cup",
-        "imageUrl": "img/base/white-cup.jpg",
+        "imageUrl": "img/base/white-cup.png",
         "name": "White Cup"
     }
 ];
@@ -72,7 +72,7 @@ class PageController{
 
         this._base = new PageBase({
             element: this._el.querySelector('[data-component="chooseBase"]'),
-            baseItems: defaultProjects
+            baseItems: defaultBases
         });
 
         this._print = new PagePrint({
@@ -90,6 +90,9 @@ class PageController{
             element: this._el.querySelector('[data-component="viewContainer"]')
         });
 
+        //render 1st bases element
+        this._view._render(defaultBases[0]);
+
         this._layers = new PageLayers({
             element: this._el.querySelector('[data-component="layersContainer"]')
         });
@@ -105,8 +108,7 @@ class PageController{
         let printDetails = this._getPrintById(printId);
 
         this._layers._render(printDetails);
-
-        console.log( printId );
+        this._view._renderDrug(printDetails);
     }
 
     _getPrintById(printId) {
@@ -126,10 +128,9 @@ class PageController{
     _onTabSelected(event) {
         let tabId = event.detail;
 
-        //---------------------
         this._print._setTabContent(tabId);
+
         this._print._setButtonTabClass(tabId);
-        //---------------------
     }
 
     _onBaseSelected(event) {
@@ -141,7 +142,7 @@ class PageController{
     }
 
     _getBaseById(baseId) {
-        return defaultProjects.filter((item) => {
+        return defaultBases.filter((item) => {
             return item.id === baseId;
         })[0];
     }

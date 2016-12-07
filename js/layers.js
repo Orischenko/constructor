@@ -6,36 +6,19 @@
 
 'use strict';
 
-let template = `
-    
-`;
+let template = document.getElementById('constructor-layers-template').innerHTML;
 
 class PageLayers{
     constructor(options) {
+        this._compiledTemplate = _.template(template);
+
         this._el = options.element;
     }
 
     _render(print) {
-        let html = '<div class="layer-item">';
-
-        html += `
-            <button class="remove-button"></button>
-            <figure><img alt="${print.id}" src="${print.imageUrl}"></figure>
-            <div class="caption">
-                <h6>${print.name}</h6>
-            </div>
-            <div class="controllers">
-                <a href="#!/print-constructor/" class="rotate"></a>
-                <a href="#!/print-constructor/" class="up"></a>
-                <a href="#!/print-constructor/" class="down"></a>
-            </div>
-        `;
-
-        html += '</div>';
-
-        this._el.innerHTML += html;
-
-        console.log( print );
+        this._el.innerHTML += this._compiledTemplate({
+            print: print
+        });
     }
 }
 

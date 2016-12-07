@@ -16,33 +16,37 @@ class PageBase{
 
         this._render(options.baseItems);
 
-        this._el.addEventListener('click', (event) => {
-            if(!event.target.closest('[data-element="baseLink"]')) {
-                return;
-            }
+        this._setActiveClass();
 
-            event.preventDefault();
-
-            let baseContainer = event.target.closest('[data-element="baseContainer"]');
-
-            this._getBaseItems();
-
-            baseContainer.classList.add('active');
-
-            let customEvent = new CustomEvent('baseSelected', {
-                detail: {
-                    id: baseContainer.dataset.baseId
-                }
-            });
-
-            this._el.dispatchEvent(customEvent);
-        });
+        this._el.addEventListener('click', this._onBaseClickLink.bind(this));
     }
 
-    _getBaseItems() {
+    _onBaseClickLink(event) {
+        if(!event.target.closest('[data-element="baseLink"]')) {
+            return;
+        }
+
+        event.preventDefault();
+
+        let baseContainer = event.target.closest('[data-element="baseContainer"]');
+
+        this._removeItemActiveClass();
+
+        baseContainer.classList.add('active');
+
+        let customEvent = new CustomEvent('baseSelected', {
+            detail: {
+                id: baseContainer.dataset.baseId
+            }
+        });
+
+        this._el.dispatchEvent(customEvent);
+    }
+
+    _removeItemActiveClass() {
         let baseItems = this._el.querySelectorAll('[data-element="baseContainer"]');
 
-        let baseItemsArray = Array.prototype.slice.call(baseItems);
+        let baseItemsArray = Array.from(baseItems);
 
         baseItemsArray.forEach((li) => {
             li.classList.remove('active');
@@ -53,6 +57,14 @@ class PageBase{
         this._el.innerHTML += this._compiletTemplate({
             baseItems: baseItems
         });
+    }
+
+    _setActiveClass() {
+        let li = this._el.querySelectorAll('[data-element="baseContainer"]');
+
+        let liArray = Array.from(li);
+
+        liArray[0].classList.add('active');
     }
 
     _getElement() {

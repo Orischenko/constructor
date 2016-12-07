@@ -109,7 +109,7 @@
 	exports.push([module.id, "@import url(https://fonts.googleapis.com/css?family=Roboto:400,900italic,900,700italic,700,500italic,500,400italic,300italic,300,100italic,100);", ""]);
 	
 	// module
-	exports.push([module.id, "body {\n  font: 300 14px/1.5em Roboto;\n  letter-spacing: .1px;\n  color: #888;\n  background: #eee;\n  margin: 0; }\n\na, a:hover, a:focus {\n  text-decoration: none; }\n\na, button {\n  -webkit-transition: all .35s ease;\n  -o-transition: all .35s ease;\n  transition: all .35s ease; }\n\nh2 {\n  font-size: 42px;\n  font-weight: 500;\n  margin: 0 0 30px; }\n\nh6 {\n  margin: 0 0 30px; }\n\nh2, h3, h4, h5, h6 {\n  color: #0d0d0d; }\n\n#content {\n  padding: 30px 0; }\n\n.box {\n  background: #fff;\n  border-radius: 2px;\n  padding: 25px 15px;\n  margin: 0 0 30px;\n  box-sizing: border-box;\n  -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3);\n  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3); }\n\n#print-catalogue {\n  padding: 30px 0; }\n\n.content figure img {\n  width: 100%; }\n\n.content .box {\n  height: 630px; }\n\n.sidebar-right .box {\n  max-height: 630px;\n  overflow-x: auto; }\n\nul {\n  margin: 0;\n  padding: 0;\n  list-style: none; }\n  ul li figure {\n    padding: 0; }\n    ul li figure img {\n      width: 100%; }\n  ul li a {\n    display: inline-block; }\n\n.base-items {\n  display: flex;\n  justify-content: center; }\n  .base-items li {\n    border: 1px solid #fff;\n    width: 70px;\n    margin: 0 20px; }\n    .base-items li.active {\n      border: 1px solid #00bcd4; }\n\n.tabs {\n  display: flex;\n  justify-content: space-between;\n  border-bottom: 1px solid #eee; }\n  .tabs a {\n    color: #00bcd4;\n    background: #fff;\n    padding: 5px 10px; }\n    .tabs a:hover, .tabs a.active {\n      color: #fff;\n      background: #00bcd4; }\n\n.all_tabs {\n  padding-top: 30px; }\n  .all_tabs > div {\n    display: none; }\n    .all_tabs > div:first-child {\n      display: block; }\n\n.prints {\n  column-count: 3; }\n  .prints li {\n    margin: 0 0 10px; }\n    .prints li a {\n      border: 1px solid transparent;\n      border-radius: 50%;\n      padding: 2px; }\n    .prints li img {\n      border-radius: 50%; }\n    .prints li.active a {\n      border-color: #00bcd4; }\n\n.layer-item {\n  overflow: hidden;\n  margin: 0 0 5px;\n  border: 1px solid #eee;\n  padding: 10px 30px 10px 10px;\n  position: relative; }\n  .layer-item:last-child {\n    margin-bottom: 0; }\n  .layer-item figure {\n    width: 30%;\n    float: left;\n    margin-right: 10px;\n    border-radius: 50%; }\n    .layer-item figure img {\n      width: 100%; }\n  .layer-item .remove-button {\n    position: absolute;\n    top: 3px;\n    right: 3px;\n    padding: 0;\n    border: none;\n    box-shadow: none;\n    background: none;\n    line-height: 1em;\n    color: #ccc; }\n    .layer-item .remove-button:focus {\n      outline: none; }\n    .layer-item .remove-button:before {\n      content: '\\E5CD';\n      font-family: 'Material Icons';\n      font-size: 16px;\n      color: inherit; }\n    .layer-item .remove-button:hover {\n      color: red; }\n  .layer-item .caption {\n    overflow: hidden; }\n  .layer-item .controllers {\n    display: flex;\n    justify-content: flex-end;\n    transform: translateX(25px); }\n    .layer-item .controllers a {\n      color: #00bcd4;\n      margin-left: 10px; }\n      .layer-item .controllers a:before {\n        font-family: 'Material Icons';\n        font-size: 16px;\n        color: inherit; }\n      .layer-item .controllers a.rotate:before {\n        content: '\\E41A'; }\n      .layer-item .controllers a.up:before {\n        content: '\\E25A'; }\n      .layer-item .controllers a.down:before {\n        content: '\\E258'; }\n      .layer-item .controllers a:hover {\n        color: red; }\n", ""]);
+	exports.push([module.id, "body {\n  font: 300 14px/1.5em Roboto;\n  letter-spacing: .1px;\n  color: #888;\n  background: #eee;\n  margin: 0; }\n\na, a:hover, a:focus {\n  text-decoration: none; }\n\na, button {\n  -webkit-transition: all .35s ease;\n  -o-transition: all .35s ease;\n  transition: all .35s ease; }\n\nh2 {\n  font-size: 42px;\n  font-weight: 500;\n  margin: 0 0 30px; }\n\nh6 {\n  margin: 0 0 30px; }\n\nh2, h3, h4, h5, h6 {\n  color: #0d0d0d; }\n\ninput {\n  width: 100%;\n  border: 1px solid #ccc;\n  -webkit-transition: all .35s ease;\n  -o-transition: all .35s ease;\n  transition: all .35s ease; }\n  input:focus {\n    outline: none;\n    box-shadow: none;\n    border-bottom-color: #00bcd4; }\n\n#content {\n  padding: 30px 0; }\n\n.box {\n  background: #fff;\n  border-radius: 2px;\n  padding: 25px 15px;\n  margin: 0 0 30px;\n  box-sizing: border-box;\n  -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3);\n  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3); }\n\n#print-catalogue {\n  padding: 30px 0; }\n\n.content figure img {\n  width: 100%; }\n\n.content .box {\n  height: 630px; }\n\n.sidebar-right .box {\n  max-height: 630px;\n  overflow-x: auto; }\n\nul {\n  margin: 0;\n  padding: 0;\n  list-style: none; }\n  ul li figure {\n    padding: 0; }\n    ul li figure img {\n      width: 100%; }\n  ul li a {\n    display: inline-block; }\n\n.base-items {\n  display: flex;\n  justify-content: center; }\n  .base-items li {\n    border: 1px solid #fff;\n    width: 70px;\n    margin: 0 20px;\n    -webkit-transition: all .35s ease;\n    -o-transition: all .35s ease;\n    transition: all .35s ease; }\n    .base-items li.active {\n      border: 1px solid #00bcd4; }\n\n.viewContainer {\n  position: relative; }\n  .viewContainer #drop-print-container {\n    position: absolute;\n    top: 85px;\n    bottom: 40px;\n    left: 145px;\n    right: 145px; }\n    .viewContainer #drop-print-container > figure {\n      position: absolute;\n      top: 50%;\n      left: 0;\n      transform: translateY(-50%); }\n\n.tabs {\n  display: flex;\n  justify-content: space-between;\n  border-bottom: 1px solid #eee; }\n  .tabs a {\n    color: #00bcd4;\n    background: #fff;\n    padding: 5px 10px; }\n    .tabs a:hover, .tabs a.active {\n      color: #fff;\n      background: #00bcd4; }\n\n.all_tabs {\n  padding-top: 30px; }\n  .all_tabs > div {\n    display: none; }\n    .all_tabs > div:first-child {\n      display: block; }\n\n.prints {\n  column-count: 3; }\n  .prints li {\n    margin: 0 0 10px; }\n    .prints li a {\n      border: 1px solid transparent;\n      border-radius: 50%;\n      padding: 2px; }\n    .prints li img {\n      border-radius: 50%; }\n    .prints li.active a {\n      border-color: #00bcd4; }\n\n.layer-item {\n  overflow: hidden;\n  margin: 0 0 5px;\n  border: 1px solid #eee;\n  padding: 10px 30px 10px 10px;\n  position: relative; }\n  .layer-item:last-child {\n    margin-bottom: 0; }\n  .layer-item figure {\n    width: 30%;\n    float: left;\n    margin-right: 10px;\n    border-radius: 50%; }\n    .layer-item figure img {\n      width: 100%; }\n  .layer-item .remove-button {\n    position: absolute;\n    top: 3px;\n    right: 3px;\n    padding: 0;\n    border: none;\n    box-shadow: none;\n    background: none;\n    line-height: 1em;\n    color: #ccc; }\n    .layer-item .remove-button:focus {\n      outline: none; }\n    .layer-item .remove-button:before {\n      content: '\\E5CD';\n      font-family: 'Material Icons';\n      font-size: 16px;\n      color: inherit; }\n    .layer-item .remove-button:hover {\n      color: red; }\n  .layer-item .caption {\n    overflow: hidden; }\n  .layer-item .controllers {\n    display: flex;\n    justify-content: flex-end;\n    transform: translateX(25px); }\n    .layer-item .controllers a {\n      color: #00bcd4;\n      margin-left: 10px; }\n      .layer-item .controllers a:before {\n        font-family: 'Material Icons';\n        font-size: 16px;\n        color: inherit; }\n      .layer-item .controllers a.rotate:before {\n        content: '\\E41A'; }\n      .layer-item .controllers a.up:before {\n        content: '\\E25A'; }\n      .layer-item .controllers a.down:before {\n        content: '\\E258'; }\n      .layer-item .controllers a:hover {\n        color: red; }\n", ""]);
 	
 	// exports
 
@@ -444,7 +444,7 @@
 	var PageView = __webpack_require__(10);
 	var PageLayers = __webpack_require__(11);
 	
-	var defaultProjects = [{
+	var defaultBases = [{
 	    "age": 0,
 	    "id": "white-t-shirt",
 	    "imageUrl": "img/base/white-t-shirt.png",
@@ -452,7 +452,7 @@
 	}, {
 	    "age": 1,
 	    "id": "white-cup",
-	    "imageUrl": "img/base/white-cup.jpg",
+	    "imageUrl": "img/base/white-cup.png",
 	    "name": "White Cup"
 	}];
 	var defaultPrints = [{
@@ -495,7 +495,7 @@
 	
 	        this._base = new PageBase({
 	            element: this._el.querySelector('[data-component="chooseBase"]'),
-	            baseItems: defaultProjects
+	            baseItems: defaultBases
 	        });
 	
 	        this._print = new PagePrint({
@@ -512,6 +512,9 @@
 	        this._view = new PageView({
 	            element: this._el.querySelector('[data-component="viewContainer"]')
 	        });
+	
+	        //render 1st bases element
+	        this._view._render(defaultBases[0]);
 	
 	        this._layers = new PageLayers({
 	            element: this._el.querySelector('[data-component="layersContainer"]')
@@ -530,8 +533,7 @@
 	            var printDetails = this._getPrintById(printId);
 	
 	            this._layers._render(printDetails);
-	
-	            console.log(printId);
+	            this._view._renderDrug(printDetails);
 	        }
 	    }, {
 	        key: '_getPrintById',
@@ -554,10 +556,9 @@
 	        value: function _onTabSelected(event) {
 	            var tabId = event.detail;
 	
-	            //---------------------
 	            this._print._setTabContent(tabId);
+	
 	            this._print._setButtonTabClass(tabId);
-	            //---------------------
 	        }
 	    }, {
 	        key: '_onBaseSelected',
@@ -571,7 +572,7 @@
 	    }, {
 	        key: '_getBaseById',
 	        value: function _getBaseById(baseId) {
-	            return defaultProjects.filter(function (item) {
+	            return defaultBases.filter(function (item) {
 	                return item.id === baseId;
 	            })[0];
 	        }
@@ -602,8 +603,6 @@
 	
 	var PageBase = function () {
 	    function PageBase(options) {
-	        var _this = this;
-	
 	        _classCallCheck(this, PageBase);
 	
 	        this._compiletTemplate = _.template(template);
@@ -612,7 +611,14 @@
 	
 	        this._render(options.baseItems);
 	
-	        this._el.addEventListener('click', function (event) {
+	        this._setActiveClass();
+	
+	        this._el.addEventListener('click', this._onBaseClickLink.bind(this));
+	    }
+	
+	    _createClass(PageBase, [{
+	        key: '_onBaseClickLink',
+	        value: function _onBaseClickLink(event) {
 	            if (!event.target.closest('[data-element="baseLink"]')) {
 	                return;
 	            }
@@ -621,7 +627,7 @@
 	
 	            var baseContainer = event.target.closest('[data-element="baseContainer"]');
 	
-	            _this._getBaseItems();
+	            this._removeItemActiveClass();
 	
 	            baseContainer.classList.add('active');
 	
@@ -631,16 +637,14 @@
 	                }
 	            });
 	
-	            _this._el.dispatchEvent(customEvent);
-	        });
-	    }
-	
-	    _createClass(PageBase, [{
-	        key: '_getBaseItems',
-	        value: function _getBaseItems() {
+	            this._el.dispatchEvent(customEvent);
+	        }
+	    }, {
+	        key: '_removeItemActiveClass',
+	        value: function _removeItemActiveClass() {
 	            var baseItems = this._el.querySelectorAll('[data-element="baseContainer"]');
 	
-	            var baseItemsArray = Array.prototype.slice.call(baseItems);
+	            var baseItemsArray = Array.from(baseItems);
 	
 	            baseItemsArray.forEach(function (li) {
 	                li.classList.remove('active');
@@ -652,6 +656,15 @@
 	            this._el.innerHTML += this._compiletTemplate({
 	                baseItems: baseItems
 	            });
+	        }
+	    }, {
+	        key: '_setActiveClass',
+	        value: function _setActiveClass() {
+	            var li = this._el.querySelectorAll('[data-element="baseContainer"]');
+	
+	            var liArray = Array.from(li);
+	
+	            liArray[0].classList.add('active');
 	        }
 	    }, {
 	        key: '_getElement',
@@ -728,6 +741,8 @@
 	
 	                var printContainer = event.target.closest('[data-element="printContainer"]');
 	
+	                printContainer.classList.add('active');
+	
 	                var customEvent = new CustomEvent('printSelected', {
 	                    detail: printContainer.dataset.printId
 	                });
@@ -742,38 +757,52 @@
 	                prints: prints
 	            });
 	        }
-	
-	        //---------------------
-	
 	    }, {
 	        key: '_setButtonTabClass',
 	        value: function _setButtonTabClass(tabId) {
-	            var allTabButtons = this._el.querySelectorAll('[data-tab-element="tabLink"]');
+	            var _this3 = this;
 	
-	            var allTabButtonsArray = Array.prototype.slice.call(allTabButtons);
+	            this._tabService(tabId, {
+	                element: this._el.querySelectorAll('[data-tab-element="tabLink"]'),
 	
-	            allTabButtonsArray.forEach(function (button) {
-	                button.classList.remove('active');
+	                success: function success(tabElementArray) {
+	                    tabElementArray.forEach(function (button) {
+	                        button.classList.remove('active');
+	                    });
+	
+	                    _this3._el.querySelector('[data-tab-id=' + tabId + ']').classList.add('active');
+	                }
 	            });
-	
-	            this._el.querySelector('[data-tab-id=' + tabId + ']').classList.add('active');
 	        }
 	    }, {
 	        key: '_setTabContent',
 	        value: function _setTabContent(tabId) {
-	            var allTabs = this._el.querySelectorAll('[data-tab-element="tab"]');
+	            var _this4 = this;
 	
-	            var allTabsArray = Array.prototype.slice.call(allTabs);
+	            this._tabService(tabId, {
+	                element: this._el.querySelectorAll('[data-tab-element="tab"]'),
 	
-	            allTabsArray.forEach(function (tab) {
-	                tab.style.display = 'none';
+	                success: function success(tabElementArray) {
+	                    tabElementArray.forEach(function (tab) {
+	                        tab.style.display = 'none';
+	                    });
+	
+	                    _this4._el.querySelector('[data-content-id=' + tabId + ']').style.display = 'block';
+	                }
 	            });
-	
-	            this._el.querySelector('[data-content-id=' + tabId + ']').style.display = 'block';
 	        }
 	
-	        //---------------------
+	        //a general method for creating tabs
 	
+	    }, {
+	        key: '_tabService',
+	        value: function _tabService(tabId, options) {
+	            var tabElement = options.element;
+	
+	            var tabElementArray = Array.from(tabElement);
+	
+	            options.success(tabElementArray);
+	        }
 	    }, {
 	        key: '_getPrintElements',
 	        value: function _getPrintElements() {
@@ -843,9 +872,42 @@
 	    _createClass(PageView, [{
 	        key: '_render',
 	        value: function _render(item) {
-	            this._el.innerHTML = this._compiledTemplate({
-	                item: item
+	            var _this = this;
+	
+	            this._renderService(item, {
+	                element: this._el.querySelector('[data-element="base-print-container"]'),
+	
+	                success: function success(el) {
+	                    el.innerHTML = _this._compiledTemplate({
+	                        item: item
+	                    });
+	                }
 	            });
+	        }
+	    }, {
+	        key: '_renderDrug',
+	        value: function _renderDrug(item) {
+	            var _this2 = this;
+	
+	            this._renderService(item, {
+	                element: this._el.querySelector('[data-element="drop-print-container"]'),
+	
+	                success: function success(el) {
+	                    el.innerHTML += _this2._compiledTemplate({
+	                        item: item
+	                    });
+	                }
+	            });
+	        }
+	
+	        //a general method for creating viewer dom
+	
+	    }, {
+	        key: '_renderService',
+	        value: function _renderService(item, options) {
+	            var el = options.element;
+	
+	            options.success(el);
 	        }
 	    }]);
 	
@@ -870,11 +932,13 @@
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 	
-	var template = '\n    \n';
+	var template = document.getElementById('constructor-layers-template').innerHTML;
 	
 	var PageLayers = function () {
 	    function PageLayers(options) {
 	        _classCallCheck(this, PageLayers);
+	
+	        this._compiledTemplate = _.template(template);
 	
 	        this._el = options.element;
 	    }
@@ -882,15 +946,9 @@
 	    _createClass(PageLayers, [{
 	        key: '_render',
 	        value: function _render(print) {
-	            var html = '<div class="layer-item">';
-	
-	            html += '\n            <button class="remove-button"></button>\n            <figure><img alt="' + print.id + '" src="' + print.imageUrl + '"></figure>\n            <div class="caption">\n                <h6>' + print.name + '</h6>\n            </div>\n            <div class="controllers">\n                <a href="#!/print-constructor/" class="rotate"></a>\n                <a href="#!/print-constructor/" class="up"></a>\n                <a href="#!/print-constructor/" class="down"></a>\n            </div>\n        ';
-	
-	            html += '</div>';
-	
-	            this._el.innerHTML += html;
-	
-	            console.log(print);
+	            this._el.innerHTML += this._compiledTemplate({
+	                print: print
+	            });
 	        }
 	    }]);
 	

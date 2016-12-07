@@ -46,6 +46,8 @@ class PagePrint{
 
             let printContainer = event.target.closest('[data-element="printContainer"]');
 
+            printContainer.classList.add('active');
+
             let customEvent = new CustomEvent('printSelected', {
                 detail: printContainer.dataset.printId
             });
@@ -60,33 +62,42 @@ class PagePrint{
         });
     }
 
-    //---------------------
-
     _setButtonTabClass(tabId) {
-        let allTabButtons = this._el.querySelectorAll('[data-tab-element="tabLink"]');
+        this._tabService(tabId, {
+            element: this._el.querySelectorAll('[data-tab-element="tabLink"]'),
 
-        let allTabButtonsArray = Array.prototype.slice.call(allTabButtons);
+            success: (tabElementArray) => {
+                tabElementArray.forEach((button) => {
+                    button.classList.remove('active');
+                });
 
-        allTabButtonsArray.forEach((button) => {
-            button.classList.remove('active');
+                this._el.querySelector(`[data-tab-id=${tabId}]`).classList.add('active');
+            }
         });
-
-        this._el.querySelector(`[data-tab-id=${tabId}]`).classList.add('active');
     }
 
     _setTabContent(tabId) {
-        let allTabs = this._el.querySelectorAll('[data-tab-element="tab"]');
+        this._tabService(tabId, {
+            element: this._el.querySelectorAll('[data-tab-element="tab"]'),
 
-        let allTabsArray = Array.prototype.slice.call(allTabs);
+            success: (tabElementArray) => {
+                tabElementArray.forEach((tab) => {
+                    tab.style.display = 'none';
+                });
 
-        allTabsArray.forEach((tab) => {
-            tab.style.display = 'none';
+                this._el.querySelector(`[data-content-id=${tabId}]`).style.display = 'block';
+            }
         });
-
-        this._el.querySelector(`[data-content-id=${tabId}]`).style.display = 'block';
     }
 
-    //---------------------
+    //a general method for creating tabs
+    _tabService(tabId, options) {
+        let tabElement = options.element;
+
+        let tabElementArray = Array.from(tabElement);
+
+        options.success(tabElementArray);
+    }
 
     _getPrintElements() {
         return this._prints;

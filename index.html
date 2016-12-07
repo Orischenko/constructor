@@ -45,8 +45,9 @@
                         <section class="content">
                             <div class="box">
                                 <h6>View Container</h6>
-                                <div data-component="viewContainer">
-
+                                <div data-component="viewContainer" class="viewContainer">
+                                    <div id="drop-print-container" data-element="drop-print-container"></div>
+                                    <div data-element="base-print-container"></div>
                                 </div>
                             </div>
                         </section>
@@ -102,7 +103,21 @@
             </ul>
         </div>
         <div data-tab-element="tab" data-content-id="tab1" data-element="printText">
-            <input type="text" data-element="field">
+            <input type="text" data-element="field" autofocus>
+        </div>
+    </div>
+</script>
+<script type="js/template" id="constructor-layers-template">
+    <div class="layer-item">
+        <button class="remove-button"></button>
+        <figure><img alt="<%=print.id%>" src="<%=print.imageUrl%>"></figure>
+        <div class="caption">
+            <h6><%=print.name%></h6>
+        </div>
+        <div class="controllers">
+            <a href="#!/print-constructor/" class="rotate"></a>
+            <a href="#!/print-constructor/" class="up"></a>
+            <a href="#!/print-constructor/" class="down"></a>
         </div>
     </div>
 </script>
