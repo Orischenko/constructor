@@ -45,6 +45,10 @@ class PageView{
 
         options.success(el);
     }
+
+    _getElement() {
+        return this._el;
+    }
 }
 
 module.exports = PageView;
