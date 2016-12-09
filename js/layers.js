@@ -14,24 +14,58 @@ class PageLayers{
 
         this._el = options.element;
 
-        //this._removeButton = this._el.querySelector('[data-element="remove-button"]');
+        this._el.addEventListener('click', this._onLayerRemoveClick.bind(this));
+        this._el.addEventListener('click', this._onLayerRotateClick.bind(this));
+        this._el.addEventListener('click', this._onLayerUpClick.bind(this));
+    }
 
-        this._el.addEventListener('click', (event) => {
-            if(!event.target.closest('[data-element="remove-button"]')) return;
+    _onLayerUpClick() {
+        let path = '[data-element="up"]';
 
-            let layerContainer = event.target.closest('[data-element="layerContainer"]');
-
-            let parentElement = event.target.parentElement.parentElement;
-
-            //parentElement.innerHTML = '';
-            parentElement.remove('[data-element="layerContainer"]');
-
-            let customEvent = new CustomEvent('removeButtonSelected', {
-                detail: layerContainer.dataset.layerId
-            });
-
-            this._el.dispatchEvent(customEvent);
+        this._controllerService(path, {
+            event: 'upButtonSelected'
         });
+    }
+
+    _onLayerRotateClick() {
+        let path = '[data-element="rotate"]';
+
+        this._controllerService(path, {
+            event: 'rotateButtonSelected'
+        });
+    }
+
+    _onLayerRemoveClick(event) {
+        let path = '[data-element="remove-button"]';
+
+        this._controllerService(path, {
+            event: 'removeButtonSelected',
+
+            success: () => {
+                let parentElement = event.target.parentElement.parentElement;
+
+                parentElement.remove('[data-element="layerContainer"]');
+            }
+        });
+    }
+
+    //a general method for controller buttons
+    _controllerService(path, options) {
+        if(!event.target.closest(path)) return;
+
+        event.preventDefault();
+
+        let layerContainer = event.target.closest('[data-element="layerContainer"]');
+
+        if(options.success) {
+            options.success();
+        }
+
+        let customEvent = new CustomEvent(options.event, {
+            detail: layerContainer.dataset.layerId
+        });
+
+        this._el.dispatchEvent(customEvent);
     }
 
     _render(print) {

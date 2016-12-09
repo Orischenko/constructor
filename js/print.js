@@ -17,21 +17,23 @@ class PagePrint{
 
         this._prints = options.prints;
 
-        this._el.addEventListener('click', (event) => {
-            if(!event.target.closest('[data-tab-element="tabLink"]')) {
-                return;
-            }
+        this._el.addEventListener('click', this._onTabLinkClick.bind(this));
+    }
 
-            event.preventDefault();
+    _onTabLinkClick(event) {
+        if(!event.target.closest('[data-tab-element="tabLink"]')) {
+            return;
+        }
 
-            let tabLink = event.target.closest('[data-tab-element="tabLink"]');
+        event.preventDefault();
 
-            let customEvent = new CustomEvent('tabSelected', {
-                detail: tabLink.dataset.tabId
-            });
+        let tabLink = event.target.closest('[data-tab-element="tabLink"]');
 
-            this._el.dispatchEvent(customEvent);
+        let customEvent = new CustomEvent('tabSelected', {
+            detail: tabLink.dataset.tabId
         });
+
+        this._el.dispatchEvent(customEvent);
     }
 
     _setPrintImagesEvent() {

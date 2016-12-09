@@ -84,6 +84,8 @@ input {
   .box {
     max-height: 630px;
     overflow-x: auto;
+    //display: flex;
+    //flex-direction: column;
   }
 }
 
@@ -130,7 +132,6 @@ ul {
   position: relative;
 
   #drop-print-container {
-    //background: rgba(255, 0, 0, .5);
     position: absolute;
     top: 85px;
     bottom: 40px;
@@ -139,9 +140,9 @@ ul {
 
     > figure {
       position: absolute;
-      top: 50%;
+      top: 0;
       left: 0;
-      transform: translateY(-50%);
+      //transform: translateY(-50%);
     }
   }
 }
@@ -198,6 +199,10 @@ ul {
 .layer-item {
   overflow: hidden;
   position: relative;
+  //order: 1;
+  //-webkit-transition: all .35s ease;
+  //-o-transition: all .35s ease;
+  //transition: all .35s ease;
 
   >div {
     border: 1px solid $itemColorDefault;
@@ -273,10 +278,6 @@ ul {
 
       &.up:before {
         content:'\e25a';
-      }
-
-      &.down:before {
-        content:'\e258';
       }
 
       &:hover {

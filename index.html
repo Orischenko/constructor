@@ -113,14 +113,13 @@
     <div class="layer-item" data-element="layerContainer" data-layer-id="<%=print.id%>">
         <div>
             <button class="remove-button" data-element="remove-button"></button>
-            <figure><img alt="<%=print.id%>" src="<%=print.imageUrl%>"></figure>
+            <figure><img alt="<%=print.id%>" data-element="layerImg" src="<%=print.imageUrl%>"></figure>
             <div class="caption">
                 <h6><%=print.name%></h6>
             </div>
             <div class="controllers">
-                <a href="#!/print-constructor/" class="rotate"></a>
-                <a href="#!/print-constructor/" class="up"></a>
-                <a href="#!/print-constructor/" class="down"></a>
+                <a href="#!/print-constructor/" class="rotate" data-element="rotate"></a>
+                <a href="#!/print-constructor/" class="up" data-element="up"></a>
             </div>
         </div>
     </div>

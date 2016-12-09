@@ -109,7 +109,7 @@
 	exports.push([module.id, "@import url(https://fonts.googleapis.com/css?family=Roboto:400,900italic,900,700italic,700,500italic,500,400italic,300italic,300,100italic,100);", ""]);
 	
 	// module
-	exports.push([module.id, "body {\n  font: 300 14px/1.5em Roboto;\n  letter-spacing: .1px;\n  color: #888;\n  background: #eee;\n  margin: 0; }\n\na, a:hover, a:focus {\n  text-decoration: none; }\n\na, button {\n  -webkit-transition: all .35s ease;\n  -o-transition: all .35s ease;\n  transition: all .35s ease; }\n\nh2 {\n  font-size: 42px;\n  font-weight: 500;\n  margin: 0 0 30px; }\n\nh6 {\n  margin: 0 0 30px; }\n\nh2, h3, h4, h5, h6 {\n  color: #0d0d0d; }\n\ninput {\n  width: 100%;\n  border: 1px solid #ccc;\n  -webkit-transition: all .35s ease;\n  -o-transition: all .35s ease;\n  transition: all .35s ease; }\n  input:focus {\n    outline: none;\n    box-shadow: none;\n    border-bottom-color: #00bcd4; }\n\n#content {\n  padding: 30px 0; }\n\n.box {\n  background: #fff;\n  border-radius: 2px;\n  padding: 25px 15px;\n  margin: 0 0 30px;\n  box-sizing: border-box;\n  -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3);\n  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3); }\n\n#print-catalogue {\n  padding: 30px 0; }\n\n.content figure img {\n  width: 100%; }\n\n.content .box {\n  height: 630px; }\n\n.sidebar-right .box {\n  max-height: 630px;\n  overflow-x: auto; }\n\nul {\n  margin: 0;\n  padding: 0;\n  list-style: none; }\n  ul li figure {\n    padding: 0; }\n    ul li figure img {\n      width: 100%; }\n  ul li a {\n    display: inline-block; }\n\n.base-items {\n  display: flex;\n  justify-content: center; }\n  .base-items li {\n    border: 1px solid #fff;\n    width: 70px;\n    margin: 0 20px;\n    -webkit-transition: all .35s ease;\n    -o-transition: all .35s ease;\n    transition: all .35s ease; }\n    .base-items li.active {\n      border: 1px solid #00bcd4; }\n\n.viewContainer {\n  position: relative; }\n  .viewContainer #drop-print-container {\n    position: absolute;\n    top: 85px;\n    bottom: 40px;\n    left: 145px;\n    right: 145px; }\n    .viewContainer #drop-print-container > figure {\n      position: absolute;\n      top: 50%;\n      left: 0;\n      transform: translateY(-50%); }\n\n.tabs {\n  display: flex;\n  justify-content: space-between;\n  border-bottom: 1px solid #eee; }\n  .tabs a {\n    color: #00bcd4;\n    background: #fff;\n    padding: 5px 10px; }\n    .tabs a:hover, .tabs a.active {\n      color: #fff;\n      background: #00bcd4; }\n\n.all_tabs {\n  padding-top: 30px; }\n  .all_tabs > div {\n    display: none; }\n    .all_tabs > div:first-child {\n      display: block; }\n\n.prints {\n  column-count: 3; }\n  .prints li {\n    margin: 0 0 10px; }\n    .prints li a {\n      border: 1px solid transparent;\n      border-radius: 50%;\n      padding: 2px; }\n    .prints li img {\n      border-radius: 50%; }\n    .prints li.active a {\n      border-color: #00bcd4; }\n\n.layer-item {\n  overflow: hidden;\n  position: relative; }\n  .layer-item > div {\n    border: 1px solid #eee;\n    padding: 10px 30px 10px 10px;\n    margin: 0 0 5px; }\n  .layer-item:last-child {\n    margin-bottom: 0; }\n  .layer-item figure {\n    width: 30%;\n    float: left;\n    margin-right: 10px;\n    border-radius: 50%; }\n    .layer-item figure img {\n      width: 100%; }\n  .layer-item .remove-button {\n    position: absolute;\n    top: 3px;\n    right: 3px;\n    padding: 0;\n    border: none;\n    box-shadow: none;\n    background: none;\n    line-height: 1em;\n    color: #ccc; }\n    .layer-item .remove-button:focus {\n      outline: none; }\n    .layer-item .remove-button:before {\n      content: '\\E5CD';\n      font-family: 'Material Icons';\n      font-size: 16px;\n      color: inherit; }\n    .layer-item .remove-button:hover {\n      color: red; }\n  .layer-item .caption {\n    overflow: hidden; }\n  .layer-item .controllers {\n    display: flex;\n    justify-content: flex-end;\n    transform: translateX(25px); }\n    .layer-item .controllers a {\n      color: #00bcd4;\n      margin-left: 10px; }\n      .layer-item .controllers a:before {\n        font-family: 'Material Icons';\n        font-size: 16px;\n        color: inherit; }\n      .layer-item .controllers a.rotate:before {\n        content: '\\E41A'; }\n      .layer-item .controllers a.up:before {\n        content: '\\E25A'; }\n      .layer-item .controllers a.down:before {\n        content: '\\E258'; }\n      .layer-item .controllers a:hover {\n        color: red; }\n", ""]);
+	exports.push([module.id, "body {\n  font: 300 14px/1.5em Roboto;\n  letter-spacing: .1px;\n  color: #888;\n  background: #eee;\n  margin: 0; }\n\na, a:hover, a:focus {\n  text-decoration: none; }\n\na, button {\n  -webkit-transition: all .35s ease;\n  -o-transition: all .35s ease;\n  transition: all .35s ease; }\n\nh2 {\n  font-size: 42px;\n  font-weight: 500;\n  margin: 0 0 30px; }\n\nh6 {\n  margin: 0 0 30px; }\n\nh2, h3, h4, h5, h6 {\n  color: #0d0d0d; }\n\ninput {\n  width: 100%;\n  border: 1px solid #ccc;\n  -webkit-transition: all .35s ease;\n  -o-transition: all .35s ease;\n  transition: all .35s ease; }\n  input:focus {\n    outline: none;\n    box-shadow: none;\n    border-bottom-color: #00bcd4; }\n\n#content {\n  padding: 30px 0; }\n\n.box {\n  background: #fff;\n  border-radius: 2px;\n  padding: 25px 15px;\n  margin: 0 0 30px;\n  box-sizing: border-box;\n  -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3);\n  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3); }\n\n#print-catalogue {\n  padding: 30px 0; }\n\n.content figure img {\n  width: 100%; }\n\n.content .box {\n  height: 630px; }\n\n.sidebar-right .box {\n  max-height: 630px;\n  overflow-x: auto; }\n\nul {\n  margin: 0;\n  padding: 0;\n  list-style: none; }\n  ul li figure {\n    padding: 0; }\n    ul li figure img {\n      width: 100%; }\n  ul li a {\n    display: inline-block; }\n\n.base-items {\n  display: flex;\n  justify-content: center; }\n  .base-items li {\n    border: 1px solid #fff;\n    width: 70px;\n    margin: 0 20px;\n    -webkit-transition: all .35s ease;\n    -o-transition: all .35s ease;\n    transition: all .35s ease; }\n    .base-items li.active {\n      border: 1px solid #00bcd4; }\n\n.viewContainer {\n  position: relative; }\n  .viewContainer #drop-print-container {\n    position: absolute;\n    top: 85px;\n    bottom: 40px;\n    left: 145px;\n    right: 145px; }\n    .viewContainer #drop-print-container > figure {\n      position: absolute;\n      top: 0;\n      left: 0; }\n\n.tabs {\n  display: flex;\n  justify-content: space-between;\n  border-bottom: 1px solid #eee; }\n  .tabs a {\n    color: #00bcd4;\n    background: #fff;\n    padding: 5px 10px; }\n    .tabs a:hover, .tabs a.active {\n      color: #fff;\n      background: #00bcd4; }\n\n.all_tabs {\n  padding-top: 30px; }\n  .all_tabs > div {\n    display: none; }\n    .all_tabs > div:first-child {\n      display: block; }\n\n.prints {\n  column-count: 3; }\n  .prints li {\n    margin: 0 0 10px; }\n    .prints li a {\n      border: 1px solid transparent;\n      border-radius: 50%;\n      padding: 2px; }\n    .prints li img {\n      border-radius: 50%; }\n    .prints li.active a {\n      border-color: #00bcd4; }\n\n.layer-item {\n  overflow: hidden;\n  position: relative; }\n  .layer-item > div {\n    border: 1px solid #eee;\n    padding: 10px 30px 10px 10px;\n    margin: 0 0 5px; }\n  .layer-item:last-child {\n    margin-bottom: 0; }\n  .layer-item figure {\n    width: 30%;\n    float: left;\n    margin-right: 10px;\n    border-radius: 50%; }\n    .layer-item figure img {\n      width: 100%; }\n  .layer-item .remove-button {\n    position: absolute;\n    top: 3px;\n    right: 3px;\n    padding: 0;\n    border: none;\n    box-shadow: none;\n    background: none;\n    line-height: 1em;\n    color: #ccc; }\n    .layer-item .remove-button:focus {\n      outline: none; }\n    .layer-item .remove-button:before {\n      content: '\\E5CD';\n      font-family: 'Material Icons';\n      font-size: 16px;\n      color: inherit; }\n    .layer-item .remove-button:hover {\n      color: red; }\n  .layer-item .caption {\n    overflow: hidden; }\n  .layer-item .controllers {\n    display: flex;\n    justify-content: flex-end;\n    transform: translateX(25px); }\n    .layer-item .controllers a {\n      color: #00bcd4;\n      margin-left: 10px; }\n      .layer-item .controllers a:before {\n        font-family: 'Material Icons';\n        font-size: 16px;\n        color: inherit; }\n      .layer-item .controllers a.rotate:before {\n        content: '\\E41A'; }\n      .layer-item .controllers a.up:before {\n        content: '\\E25A'; }\n      .layer-item .controllers a:hover {\n        color: red; }\n", ""]);
 	
 	// exports
 
@@ -524,19 +524,40 @@
 	        this._print._getElement().addEventListener('tabSelected', this._onTabSelected.bind(this));
 	        this._print._getElement().addEventListener('printSelected', this._onPrintSelected.bind(this));
 	        this._layers._getElement().addEventListener('removeButtonSelected', this._onRemoveButtonSelected.bind(this));
+	        this._layers._getElement().addEventListener('rotateButtonSelected', this._onRotateButtonSelected.bind(this));
+	        this._layers._getElement().addEventListener('upButtonSelected', this._onUpButtonSelected.bind(this));
 	    }
 	
 	    _createClass(PageController, [{
+	        key: '_onUpButtonSelected',
+	        value: function _onUpButtonSelected(event) {
+	            var layerId = event.detail;
+	
+	            var layerArray = Array.from(this._view._getElement().querySelectorAll('[data-element="viewContainer"]'));
+	
+	            layerArray.forEach(function (layer) {
+	                layer.style.zIndex = '0';
+	            });
+	
+	            this._getViewByIdOnClickController(layerId).style.zIndex = '9999';
+	        }
+	    }, {
+	        key: '_onRotateButtonSelected',
+	        value: function _onRotateButtonSelected(event) {
+	            var layerId = event.detail;
+	
+	            var degrees = 45;
+	
+	            this._getViewByIdOnClickController(layerId).style.WebkitTransform += 'rotate(' + degrees + 'deg)';
+	        }
+	    }, {
 	        key: '_onRemoveButtonSelected',
 	        value: function _onRemoveButtonSelected(event) {
 	            var layerId = event.detail;
 	
 	            this._getPrintByIdOnRemove(layerId).classList.remove('active');
 	
-	            //this._getViewByIdOnRemove(layerId).innerHTML = '';
-	            this._getViewByIdOnRemove(layerId).remove('[data-element="viewContainer"]');
-	
-	            //console.log( this._getLayerByIdOnRemove(layerId) );
+	            this._getViewByIdOnClickController(layerId).remove('[data-element="viewContainer"]');
 	        }
 	    }, {
 	        key: '_getPrintByIdOnRemove',
@@ -548,15 +569,13 @@
 	            })[0];
 	        }
 	    }, {
-	        key: '_getViewByIdOnRemove',
-	        value: function _getViewByIdOnRemove(layerId) {
+	        key: '_getViewByIdOnClickController',
+	        value: function _getViewByIdOnClickController(layerId) {
 	            var layerArray = Array.from(this._view._getElement().querySelectorAll('[data-element="viewContainer"]'));
 	
 	            return layerArray.filter(function (layer) {
 	                return layer.dataset.viewId === layerId;
 	            })[0];
-	
-	            //console.log( this._view._getElement().querySelectorAll('[data-element="viewContainer"]')[0] );
 	        }
 	    }, {
 	        key: '_onPrintSelected',
@@ -732,8 +751,6 @@
 	
 	var PagePrint = function () {
 	    function PagePrint(options) {
-	        var _this = this;
-	
 	        _classCallCheck(this, PagePrint);
 	
 	        this._compiledTemplate = _.template(template);
@@ -742,7 +759,12 @@
 	
 	        this._prints = options.prints;
 	
-	        this._el.addEventListener('click', function (event) {
+	        this._el.addEventListener('click', this._onTabLinkClick.bind(this));
+	    }
+	
+	    _createClass(PagePrint, [{
+	        key: '_onTabLinkClick',
+	        value: function _onTabLinkClick(event) {
 	            if (!event.target.closest('[data-tab-element="tabLink"]')) {
 	                return;
 	            }
@@ -755,14 +777,12 @@
 	                detail: tabLink.dataset.tabId
 	            });
 	
-	            _this._el.dispatchEvent(customEvent);
-	        });
-	    }
-	
-	    _createClass(PagePrint, [{
+	            this._el.dispatchEvent(customEvent);
+	        }
+	    }, {
 	        key: '_setPrintImagesEvent',
 	        value: function _setPrintImagesEvent() {
-	            var _this2 = this;
+	            var _this = this;
 	
 	            var projects = this._el.querySelector('[data-element="printImages"]');
 	
@@ -781,7 +801,7 @@
 	                    detail: printContainer.dataset.printId
 	                });
 	
-	                _this2._el.dispatchEvent(customEvent);
+	                _this._el.dispatchEvent(customEvent);
 	            });
 	        }
 	    }, {
@@ -794,7 +814,7 @@
 	    }, {
 	        key: '_setButtonTabClass',
 	        value: function _setButtonTabClass(tabId) {
-	            var _this3 = this;
+	            var _this2 = this;
 	
 	            this._tabService(tabId, {
 	                element: this._el.querySelectorAll('[data-tab-element="tabLink"]'),
@@ -804,14 +824,14 @@
 	                        button.classList.remove('active');
 	                    });
 	
-	                    _this3._el.querySelector('[data-tab-id=' + tabId + ']').classList.add('active');
+	                    _this2._el.querySelector('[data-tab-id=' + tabId + ']').classList.add('active');
 	                }
 	            });
 	        }
 	    }, {
 	        key: '_setTabContent',
 	        value: function _setTabContent(tabId) {
-	            var _this4 = this;
+	            var _this3 = this;
 	
 	            this._tabService(tabId, {
 	                element: this._el.querySelectorAll('[data-tab-element="tab"]'),
@@ -821,7 +841,7 @@
 	                        tab.style.display = 'none';
 	                    });
 	
-	                    _this4._el.querySelector('[data-content-id=' + tabId + ']').style.display = 'block';
+	                    _this3._el.querySelector('[data-content-id=' + tabId + ']').style.display = 'block';
 	                }
 	            });
 	        }
@@ -975,35 +995,73 @@
 	
 	var PageLayers = function () {
 	    function PageLayers(options) {
-	        var _this = this;
-	
 	        _classCallCheck(this, PageLayers);
 	
 	        this._compiledTemplate = _.template(template);
 	
 	        this._el = options.element;
 	
-	        //this._removeButton = this._el.querySelector('[data-element="remove-button"]');
-	
-	        this._el.addEventListener('click', function (event) {
-	            if (!event.target.closest('[data-element="remove-button"]')) return;
-	
-	            var layerContainer = event.target.closest('[data-element="layerContainer"]');
-	
-	            var parentElement = event.target.parentElement.parentElement;
-	
-	            //parentElement.innerHTML = '';
-	            parentElement.remove('[data-element="layerContainer"]');
-	
-	            var customEvent = new CustomEvent('removeButtonSelected', {
-	                detail: layerContainer.dataset.layerId
-	            });
-	
-	            _this._el.dispatchEvent(customEvent);
-	        });
+	        this._el.addEventListener('click', this._onLayerRemoveClick.bind(this));
+	        this._el.addEventListener('click', this._onLayerRotateClick.bind(this));
+	        this._el.addEventListener('click', this._onLayerUpClick.bind(this));
 	    }
 	
 	    _createClass(PageLayers, [{
+	        key: '_onLayerUpClick',
+	        value: function _onLayerUpClick() {
+	            var path = '[data-element="up"]';
+	
+	            this._controllerService(path, {
+	                event: 'upButtonSelected'
+	            });
+	        }
+	    }, {
+	        key: '_onLayerRotateClick',
+	        value: function _onLayerRotateClick() {
+	            var path = '[data-element="rotate"]';
+	
+	            this._controllerService(path, {
+	                event: 'rotateButtonSelected'
+	            });
+	        }
+	    }, {
+	        key: '_onLayerRemoveClick',
+	        value: function _onLayerRemoveClick(event) {
+	            var path = '[data-element="remove-button"]';
+	
+	            this._controllerService(path, {
+	                event: 'removeButtonSelected',
+	
+	                success: function success() {
+	                    var parentElement = event.target.parentElement.parentElement;
+	
+	                    parentElement.remove('[data-element="layerContainer"]');
+	                }
+	            });
+	        }
+	
+	        //a general method for controller buttons
+	
+	    }, {
+	        key: '_controllerService',
+	        value: function _controllerService(path, options) {
+	            if (!event.target.closest(path)) return;
+	
+	            event.preventDefault();
+	
+	            var layerContainer = event.target.closest('[data-element="layerContainer"]');
+	
+	            if (options.success) {
+	                options.success();
+	            }
+	
+	            var customEvent = new CustomEvent(options.event, {
+	                detail: layerContainer.dataset.layerId
+	            });
+	
+	            this._el.dispatchEvent(customEvent);
+	        }
+	    }, {
 	        key: '_render',
 	        value: function _render(print) {
 	            this._el.innerHTML += this._compiledTemplate({

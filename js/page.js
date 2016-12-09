@@ -101,6 +101,28 @@ class PageController{
         this._print._getElement().addEventListener('tabSelected', this._onTabSelected.bind(this));
         this._print._getElement().addEventListener('printSelected', this._onPrintSelected.bind(this));
         this._layers._getElement().addEventListener('removeButtonSelected', this._onRemoveButtonSelected.bind(this));
+        this._layers._getElement().addEventListener('rotateButtonSelected', this._onRotateButtonSelected.bind(this));
+        this._layers._getElement().addEventListener('upButtonSelected', this._onUpButtonSelected.bind(this));
+    }
+
+    _onUpButtonSelected(event) {
+        let layerId = event.detail;
+
+        let layerArray = Array.from( this._view._getElement().querySelectorAll('[data-element="viewContainer"]') );
+
+        layerArray.forEach((layer) => {
+            layer.style.zIndex = '0';
+        });
+
+        this._getViewByIdOnClickController(layerId).style.zIndex = '9999';
+    }
+
+    _onRotateButtonSelected(event) {
+        let layerId = event.detail;
+
+        let degrees = 45;
+
+        this._getViewByIdOnClickController(layerId).style.WebkitTransform += `rotate(${degrees}deg)`;
     }
 
     _onRemoveButtonSelected(event) {
@@ -108,10 +130,7 @@ class PageController{
 
         this._getPrintByIdOnRemove(layerId).classList.remove('active');
 
-        //this._getViewByIdOnRemove(layerId).innerHTML = '';
-        this._getViewByIdOnRemove(layerId).remove('[data-element="viewContainer"]');
-
-        //console.log( this._getLayerByIdOnRemove(layerId) );
+        this._getViewByIdOnClickController(layerId).remove('[data-element="viewContainer"]');
     }
 
     _getPrintByIdOnRemove(layerId) {
@@ -122,14 +141,12 @@ class PageController{
         })[0];
     }
 
-    _getViewByIdOnRemove(layerId) {
+    _getViewByIdOnClickController(layerId) {
         let layerArray = Array.from( this._view._getElement().querySelectorAll('[data-element="viewContainer"]') );
 
         return layerArray.filter((layer) => {
             return layer.dataset.viewId === layerId;
         })[0];
-
-        //console.log( this._view._getElement().querySelectorAll('[data-element="viewContainer"]')[0] );
     }
 
     _onPrintSelected(event) {
