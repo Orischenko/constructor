@@ -8,9 +8,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.1/css/bootstrap.css">
     <link rel="stylesheet" href="fonts/material-icons/css/material-icons.css">
 
-    <!--LoDash-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.2/lodash.min.js"></script>
-
     <script src="build.js" defer></script>
 </head>
 <body>
@@ -68,61 +65,5 @@
             </div>
         </div>
     </div>
-<script type="js/template" id="constructor-base-template">
-    <ul class="base-items" data-element="baseItems">
-
-        <% baseItems.forEach((item) => { %>
-            <li data-element="baseContainer" data-base-id="<%=item.id%>">
-                <a href="#!/print-constructor/<%=item.id%>" data-element="baseLink">
-                    <figure>
-                        <img alt="<%=item.id%>" src="<%=item.imageUrl%>">
-                    </figure>
-                </a>
-            </li>
-        <% }); %>
-
-    </ul>
-</script>
-<script type="js/template" id="constructor-viewer-template">
-    <figure data-element="viewContainer" data-view-id="<%=item.id%>">
-        <img alt="<%=item.id%>" src="<%=item.imageUrl%>">
-    </figure>
-</script>
-<script type="js/template" id="constructor-prints-template">
-    <ul class="tabs">
-        <li><a href="#!/print-constructor" data-tab-element="tabLink" data-tab-id="tab0" class="active">Image print</a></li>
-        <li><a href="#!/print-constructor" data-tab-element="tabLink" data-tab-id="tab1">Text print</a></li>
-    </ul>
-
-    <div class="all_tabs">
-        <div data-tab-element="tab" data-content-id="tab0" data-element="printImages">
-            <ul class="prints">
-                <% prints.forEach((print) => { %>
-                    <li data-element="printContainer" data-print-id="<%=print.id%>">
-                        <figure><a href="#!/print-constructor/<%=print.id%>" data-element="printLink"><img alt="<%=print.id%>" src="<%=print.imageUrl%>"></a></figure>
-                    </li>
-                <% }); %>
-            </ul>
-        </div>
-        <div data-tab-element="tab" data-content-id="tab1" data-element="printText">
-            <input type="text" data-element="field" autofocus>
-        </div>
-    </div>
-</script>
-<script type="js/template" id="constructor-layers-template">
-    <div class="layer-item" data-element="layerContainer" data-layer-id="<%=print.id%>">
-        <div>
-            <button class="remove-button" data-element="remove-button"></button>
-            <figure><img alt="<%=print.id%>" data-element="layerImg" src="<%=print.imageUrl%>"></figure>
-            <div class="caption">
-                <h6><%=print.name%></h6>
-            </div>
-            <div class="controllers">
-                <a href="#!/print-constructor/" class="rotate" data-element="rotate"></a>
-                <a href="#!/print-constructor/" class="up" data-element="up"></a>
-            </div>
-        </div>
-    </div>
-</script>
 </body>
 </html>

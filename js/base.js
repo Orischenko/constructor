@@ -6,12 +6,10 @@
 
 'use strict';
 
-let template = document.getElementById('constructor-base-template').innerHTML;
+let compiledTemplate = require('./../templates/constructor-base-template.hbs');
 
 class PageBase{
     constructor(options) {
-        this._compiletTemplate = _.template(template);
-
         this._el = options.element;
 
         this._render(options.baseItems);
@@ -54,7 +52,7 @@ class PageBase{
     }
 
     _render(baseItems) {
-        this._el.innerHTML += this._compiletTemplate({
+        this._el.innerHTML += compiledTemplate({
             baseItems: baseItems
         });
     }

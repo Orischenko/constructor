@@ -6,12 +6,10 @@
 
 'use strict';
 
-let template = document.getElementById('constructor-viewer-template').innerHTML;
+let compiledTemplate = require('./../templates/constructor-viewer-template.hbs');
 
 class PageView{
     constructor(options) {
-        this._compiledTemplate = _.template(template);
-
         this._el = options.element;
     }
 
@@ -20,7 +18,7 @@ class PageView{
             element: this._el.querySelector('[data-element="base-print-container"]'),
 
             success: (el) => {
-                el.innerHTML = this._compiledTemplate({
+                el.innerHTML = compiledTemplate({
                     item: item
                 });
             }
@@ -32,7 +30,7 @@ class PageView{
             element: this._el.querySelector('[data-element="drop-print-container"]'),
 
             success: (el) => {
-                el.innerHTML += this._compiledTemplate({
+                el.innerHTML += compiledTemplate({
                     item: item
                 });
             }

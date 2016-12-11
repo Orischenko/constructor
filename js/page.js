@@ -108,9 +108,9 @@ class PageController{
     _onUpButtonSelected(event) {
         let layerId = event.detail;
 
-        let layerArray = Array.from( this._view._getElement().querySelectorAll('[data-element="viewContainer"]') );
+        let viewArray = Array.from( this._view._getElement().querySelectorAll('[data-element="viewContainer"]') );
 
-        layerArray.forEach((layer) => {
+        viewArray.forEach((layer) => {
             layer.style.zIndex = '0';
         });
 

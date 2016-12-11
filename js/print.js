@@ -6,13 +6,10 @@
 
 'use strict';
 
-let template = document.getElementById('constructor-prints-template').innerHTML;
+let compiledTemplate = require('./../templates/constructor-prints-template.hbs');
 
 class PagePrint{
     constructor(options) {
-
-        this._compiledTemplate = _.template(template);
-
         this._el = options.element;
 
         this._prints = options.prints;
@@ -59,7 +56,7 @@ class PagePrint{
     }
 
     _render(prints) {
-        this._el.innerHTML += this._compiledTemplate({
+        this._el.innerHTML += compiledTemplate({
             prints: prints
         });
     }

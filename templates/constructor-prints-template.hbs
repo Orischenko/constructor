@@ -1,0 +1,23 @@
+<ul class="tabs">
+    <li><a href="#!/print-constructor" data-tab-element="tabLink" data-tab-id="tab0" class="active">Image print</a></li>
+    <li><a href="#!/print-constructor" data-tab-element="tabLink" data-tab-id="tab1">Text print</a></li>
+</ul>
+
+<div class="all_tabs">
+    <div data-tab-element="tab" data-content-id="tab0" data-element="printImages">
+        <ul class="prints">
+            {{#each prints}}
+            <li data-element="printContainer" data-print-id="{{this.id}}">
+                <figure>
+                    <a href="#!/print-constructor/{{this.id}}" data-element="printLink">
+                        <img alt="{{this.id}}" src="{{this.imageUrl}}">
+                    </a>
+                </figure>
+            </li>
+            {{/each}}
+        </ul>
+    </div>
+    <div data-tab-element="tab" data-content-id="tab1" data-element="printText">
+        <input type="text" data-element="field" autofocus>
+    </div>
+</div>

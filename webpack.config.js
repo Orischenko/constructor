@@ -31,6 +31,11 @@ module.exports = {
                 query: {
                     presets: ['es2015']
                 }
+            },
+
+            {
+                test: /\.hbs$/,
+                loader: "handlebars-loader"
             }
         ]
     }

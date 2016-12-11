@@ -6,12 +6,10 @@
 
 'use strict';
 
-let template = document.getElementById('constructor-layers-template').innerHTML;
+let compiledTemplate = require('./../templates/constructor-layers-template.hbs');
 
 class PageLayers{
     constructor(options) {
-        this._compiledTemplate = _.template(template);
-
         this._el = options.element;
 
         this._el.addEventListener('click', this._onLayerRemoveClick.bind(this));
@@ -23,7 +21,19 @@ class PageLayers{
         let path = '[data-element="up"]';
 
         this._controllerService(path, {
-            event: 'upButtonSelected'
+            event: 'upButtonSelected',
+
+            success: () => {
+                let layerArray = Array.from( this._el.querySelectorAll('[data-element="layerContainer"]') );
+
+                let parentElement = event.target.parentElement.parentElement.parentElement;
+
+                layerArray.forEach((layer) => {
+                    layer.style.order = '0';
+                });
+
+                parentElement.style.order = '3';
+            }
         });
     }
 
@@ -69,7 +79,7 @@ class PageLayers{
     }
 
     _render(print) {
-        this._el.innerHTML += this._compiledTemplate({
+        this._el.innerHTML += compiledTemplate({
             print: print
         });
     }

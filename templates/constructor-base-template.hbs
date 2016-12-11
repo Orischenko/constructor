@@ -1,0 +1,13 @@
+<ul class="base-items" data-element="baseItems">
+
+    {{#each baseItems}}
+    <li data-element="baseContainer" data-base-id="{{this.id}}">
+        <a href="#!/print-constructor/{{this.id}}" data-element="baseLink">
+            <figure>
+                <img alt="{{this.id}}" src="{{this.imageUrl}}">
+            </figure>
+        </a>
+    </li>
+    {{/each}}
+
+</ul>
