@@ -109,7 +109,7 @@
 	exports.push([module.id, "@import url(https://fonts.googleapis.com/css?family=Roboto:400,900italic,900,700italic,700,500italic,500,400italic,300italic,300,100italic,100);", ""]);
 	
 	// module
-	exports.push([module.id, "body {\n  font: 300 14px/1.5em Roboto;\n  letter-spacing: .1px;\n  color: #888;\n  background: #eee;\n  margin: 0; }\n\na, a:hover, a:focus {\n  text-decoration: none; }\n\na, button {\n  -webkit-transition: all .35s ease;\n  -o-transition: all .35s ease;\n  transition: all .35s ease; }\n\nh2 {\n  font-size: 42px;\n  font-weight: 500;\n  margin: 0 0 30px; }\n\nh6 {\n  margin: 0 0 30px; }\n\nh2, h3, h4, h5, h6 {\n  color: #0d0d0d; }\n\ninput {\n  width: 100%;\n  border: 1px solid #ccc;\n  -webkit-transition: all .35s ease;\n  -o-transition: all .35s ease;\n  transition: all .35s ease; }\n  input:focus {\n    outline: none;\n    box-shadow: none;\n    border-bottom-color: #00bcd4; }\n\n#content {\n  padding: 30px 0; }\n\n.box {\n  background: #fff;\n  border-radius: 2px;\n  padding: 25px 15px;\n  margin: 0 0 30px;\n  box-sizing: border-box;\n  -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3);\n  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3); }\n\n#print-catalogue {\n  padding: 30px 0; }\n\n.content figure img {\n  width: 100%; }\n\n.content .box {\n  height: 630px; }\n\n.sidebar-right .box {\n  max-height: 630px;\n  overflow-x: auto;\n  display: flex;\n  flex-direction: column-reverse; }\n\nul {\n  margin: 0;\n  padding: 0;\n  list-style: none; }\n  ul li figure {\n    padding: 0; }\n    ul li figure img {\n      width: 100%; }\n  ul li a {\n    display: inline-block; }\n\n.base-items {\n  display: flex;\n  justify-content: center; }\n  .base-items li {\n    border: 1px solid #fff;\n    width: 70px;\n    margin: 0 20px;\n    -webkit-transition: all .35s ease;\n    -o-transition: all .35s ease;\n    transition: all .35s ease; }\n    .base-items li.active {\n      border: 1px solid #00bcd4; }\n\n.viewContainer {\n  position: relative; }\n  .viewContainer #drop-print-container {\n    position: absolute;\n    top: 85px;\n    bottom: 40px;\n    left: 145px;\n    right: 145px; }\n    .viewContainer #drop-print-container > figure {\n      position: absolute;\n      top: 0;\n      left: 0; }\n\n.tabs {\n  display: flex;\n  justify-content: space-between;\n  border-bottom: 1px solid #eee; }\n  .tabs a {\n    color: #00bcd4;\n    background: #fff;\n    padding: 5px 10px; }\n    .tabs a:hover, .tabs a.active {\n      color: #fff;\n      background: #00bcd4; }\n\n.all_tabs {\n  padding-top: 30px; }\n  .all_tabs > div {\n    display: none; }\n    .all_tabs > div:first-child {\n      display: block; }\n\n.prints {\n  column-count: 3; }\n  .prints li {\n    margin: 0 0 10px; }\n    .prints li a {\n      border: 1px solid transparent;\n      border-radius: 50%;\n      padding: 2px; }\n    .prints li img {\n      border-radius: 50%; }\n    .prints li.active a {\n      border-color: #00bcd4; }\n\n.layer-item {\n  overflow: hidden;\n  position: relative;\n  order: 0; }\n  .layer-item > div {\n    border: 1px solid #eee;\n    padding: 10px 30px 10px 10px;\n    margin: 0 0 5px; }\n  .layer-item:last-child {\n    margin-bottom: 0; }\n  .layer-item figure {\n    width: 30%;\n    float: left;\n    margin-right: 10px;\n    border-radius: 50%; }\n    .layer-item figure img {\n      width: 100%; }\n  .layer-item .remove-button {\n    position: absolute;\n    top: 3px;\n    right: 3px;\n    padding: 0;\n    border: none;\n    box-shadow: none;\n    background: none;\n    line-height: 1em;\n    color: #ccc; }\n    .layer-item .remove-button:focus {\n      outline: none; }\n    .layer-item .remove-button:before {\n      content: '\\E5CD';\n      font-family: 'Material Icons';\n      font-size: 16px;\n      color: inherit; }\n    .layer-item .remove-button:hover {\n      color: red; }\n  .layer-item .caption {\n    overflow: hidden; }\n  .layer-item .controllers {\n    display: flex;\n    justify-content: flex-end;\n    transform: translateX(25px); }\n    .layer-item .controllers a {\n      color: #00bcd4;\n      margin-left: 10px; }\n      .layer-item .controllers a:before {\n        font-family: 'Material Icons';\n        font-size: 16px;\n        color: inherit; }\n      .layer-item .controllers a.rotate:before {\n        content: '\\E41A'; }\n      .layer-item .controllers a.up:before {\n        content: '\\E25A'; }\n      .layer-item .controllers a:hover {\n        color: red; }\n", ""]);
+	exports.push([module.id, "body {\n  font: 300 14px/1.5em Roboto;\n  letter-spacing: .1px;\n  color: #888;\n  background: #eee;\n  margin: 0; }\n\na, a:hover, a:focus {\n  text-decoration: none; }\n\na, button {\n  -webkit-transition: all .35s ease;\n  -o-transition: all .35s ease;\n  transition: all .35s ease; }\n\nh2 {\n  font-size: 42px;\n  font-weight: 500;\n  margin: 0 0 30px; }\n\nh6 {\n  margin: 0 0 30px; }\n\nh2, h3, h4, h5, h6 {\n  color: #0d0d0d; }\n\ninput {\n  width: 100%;\n  border: 1px solid #ccc;\n  -webkit-transition: all .35s ease;\n  -o-transition: all .35s ease;\n  transition: all .35s ease; }\n  input:focus {\n    outline: none;\n    box-shadow: none;\n    border-bottom-color: #00bcd4; }\n\n#content {\n  padding: 30px 0; }\n\n.box {\n  background: #fff;\n  border-radius: 2px;\n  padding: 25px 15px;\n  margin: 0 0 30px;\n  box-sizing: border-box;\n  -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3);\n  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3); }\n\n#print-catalogue {\n  padding: 30px 0; }\n\n.content figure img {\n  width: 100%; }\n\n.content .box {\n  height: 630px; }\n\n.sidebar-right .box {\n  max-height: 630px;\n  overflow-x: auto;\n  display: flex;\n  flex-direction: column-reverse; }\n  .sidebar-right .box h6 {\n    order: 4; }\n\nul {\n  margin: 0;\n  padding: 0;\n  list-style: none; }\n  ul li figure {\n    padding: 0; }\n    ul li figure img {\n      width: 100%; }\n  ul li a {\n    display: inline-block; }\n\n.base-items {\n  display: flex;\n  justify-content: center; }\n  .base-items li {\n    border: 1px solid #fff;\n    width: 70px;\n    margin: 0 20px;\n    -webkit-transition: all .35s ease;\n    -o-transition: all .35s ease;\n    transition: all .35s ease; }\n    .base-items li.active {\n      border: 1px solid #00bcd4; }\n\n.viewContainer {\n  position: relative; }\n  .viewContainer #drop-print-container, .viewContainer #drop-text-container {\n    position: absolute;\n    top: 85px;\n    bottom: 40px;\n    left: 145px;\n    right: 145px; }\n    .viewContainer #drop-print-container > figure, .viewContainer #drop-text-container > figure {\n      position: absolute;\n      top: 0;\n      left: 0; }\n  .viewContainer #drop-text-container {\n    text-align: center;\n    z-index: 9999;\n    color: #00bcd4; }\n\n.tabs {\n  display: flex;\n  justify-content: space-between;\n  border-bottom: 1px solid #eee; }\n  .tabs a {\n    color: #00bcd4;\n    background: #fff;\n    padding: 5px 10px; }\n    .tabs a:hover, .tabs a.active {\n      color: #fff;\n      background: #00bcd4; }\n\n.all_tabs {\n  padding-top: 30px; }\n  .all_tabs > div {\n    display: none; }\n    .all_tabs > div:first-child {\n      display: block; }\n\n.prints {\n  column-count: 3; }\n  .prints li {\n    margin: 0 0 10px; }\n    .prints li a {\n      border: 1px solid transparent;\n      border-radius: 50%;\n      padding: 2px; }\n    .prints li img {\n      border-radius: 50%; }\n    .prints li.active a {\n      border-color: #00bcd4; }\n\n.layer-item {\n  overflow: hidden;\n  position: relative;\n  order: 0; }\n  .layer-item > div {\n    border: 1px solid #eee;\n    padding: 10px 30px 10px 10px;\n    margin: 0 0 5px; }\n  .layer-item:last-child {\n    margin-bottom: 0; }\n  .layer-item figure {\n    width: 30%;\n    float: left;\n    margin-right: 10px;\n    border-radius: 50%; }\n    .layer-item figure img {\n      width: 100%; }\n  .layer-item .remove-button {\n    position: absolute;\n    top: 3px;\n    right: 3px;\n    padding: 0;\n    border: none;\n    box-shadow: none;\n    background: none;\n    line-height: 1em;\n    color: #ccc; }\n    .layer-item .remove-button:focus {\n      outline: none; }\n    .layer-item .remove-button:before {\n      content: '\\E5CD';\n      font-family: 'Material Icons';\n      font-size: 16px;\n      color: inherit; }\n    .layer-item .remove-button:hover {\n      color: red; }\n  .layer-item .caption {\n    overflow: hidden; }\n  .layer-item .controllers {\n    display: flex;\n    justify-content: flex-end;\n    transform: translateX(25px); }\n    .layer-item .controllers a {\n      color: #00bcd4;\n      margin-left: 10px; }\n      .layer-item .controllers a:before {\n        font-family: 'Material Icons';\n        font-size: 16px;\n        color: inherit; }\n      .layer-item .controllers a.rotate:before {\n        content: '\\E41A'; }\n      .layer-item .controllers a.up:before {\n        content: '\\E25A'; }\n      .layer-item .controllers a:hover {\n        color: red; }\n", ""]);
 	
 	// exports
 
@@ -439,10 +439,10 @@
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 	
 	var PageBase = __webpack_require__(7);
-	var PagePrint = __webpack_require__(8);
-	var PageColor = __webpack_require__(9);
-	var PageView = __webpack_require__(10);
-	var PageLayers = __webpack_require__(11);
+	var PagePrint = __webpack_require__(28);
+	var PageColor = __webpack_require__(30);
+	var PageView = __webpack_require__(31);
+	var PageLayers = __webpack_require__(33);
 	
 	var defaultBases = [{
 	    "age": 0,
@@ -526,9 +526,17 @@
 	        this._layers._getElement().addEventListener('removeButtonSelected', this._onRemoveButtonSelected.bind(this));
 	        this._layers._getElement().addEventListener('rotateButtonSelected', this._onRotateButtonSelected.bind(this));
 	        this._layers._getElement().addEventListener('upButtonSelected', this._onUpButtonSelected.bind(this));
+	        this._print._getElement().addEventListener('input', this._onInputChanged.bind(this));
 	    }
 	
 	    _createClass(PageController, [{
+	        key: '_onInputChanged',
+	        value: function _onInputChanged() {
+	            var inputValue = this._print._getInputValue();
+	
+	            this._view._renderDrugText(inputValue);
+	        }
+	    }, {
 	        key: '_onUpButtonSelected',
 	        value: function _onUpButtonSelected(event) {
 	            var layerId = event.detail;
@@ -539,7 +547,7 @@
 	                layer.style.zIndex = '0';
 	            });
 	
-	            this._getViewByIdOnClickController(layerId).style.zIndex = '9999';
+	            this._getViewByIdOnClickController(layerId).style.zIndex = '999';
 	        }
 	    }, {
 	        key: '_onRotateButtonSelected',
@@ -652,7 +660,7 @@
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 	
-	var compiledTemplate = __webpack_require__(12);
+	var compiledTemplate = __webpack_require__(8);
 	
 	var PageBase = function () {
 	    function PageBase(options) {
@@ -733,360 +741,7 @@
 /* 8 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/**
-	 * Plugin Name: Print Constructor
-	 * Type plugin: single page application
-	 * Author: Orischenko Alexander
-	 */
-	
-	'use strict';
-	
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-	
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-	
-	var compiledTemplate = __webpack_require__(33);
-	
-	var PagePrint = function () {
-	    function PagePrint(options) {
-	        _classCallCheck(this, PagePrint);
-	
-	        this._el = options.element;
-	
-	        this._prints = options.prints;
-	
-	        this._el.addEventListener('click', this._onTabLinkClick.bind(this));
-	    }
-	
-	    _createClass(PagePrint, [{
-	        key: '_onTabLinkClick',
-	        value: function _onTabLinkClick(event) {
-	            if (!event.target.closest('[data-tab-element="tabLink"]')) {
-	                return;
-	            }
-	
-	            event.preventDefault();
-	
-	            var tabLink = event.target.closest('[data-tab-element="tabLink"]');
-	
-	            var customEvent = new CustomEvent('tabSelected', {
-	                detail: tabLink.dataset.tabId
-	            });
-	
-	            this._el.dispatchEvent(customEvent);
-	        }
-	    }, {
-	        key: '_setPrintImagesEvent',
-	        value: function _setPrintImagesEvent() {
-	            var _this = this;
-	
-	            var projects = this._el.querySelector('[data-element="printImages"]');
-	
-	            projects.addEventListener('click', function (event) {
-	                if (!event.target.closest('[data-element="printLink"]')) {
-	                    return;
-	                }
-	
-	                event.preventDefault();
-	
-	                var printContainer = event.target.closest('[data-element="printContainer"]');
-	
-	                printContainer.classList.add('active');
-	
-	                var customEvent = new CustomEvent('printSelected', {
-	                    detail: printContainer.dataset.printId
-	                });
-	
-	                _this._el.dispatchEvent(customEvent);
-	            });
-	        }
-	    }, {
-	        key: '_render',
-	        value: function _render(prints) {
-	            this._el.innerHTML += compiledTemplate({
-	                prints: prints
-	            });
-	        }
-	    }, {
-	        key: '_setButtonTabClass',
-	        value: function _setButtonTabClass(tabId) {
-	            var _this2 = this;
-	
-	            this._tabService(tabId, {
-	                element: this._el.querySelectorAll('[data-tab-element="tabLink"]'),
-	
-	                success: function success(tabElementArray) {
-	                    tabElementArray.forEach(function (button) {
-	                        button.classList.remove('active');
-	                    });
-	
-	                    _this2._el.querySelector('[data-tab-id=' + tabId + ']').classList.add('active');
-	                }
-	            });
-	        }
-	    }, {
-	        key: '_setTabContent',
-	        value: function _setTabContent(tabId) {
-	            var _this3 = this;
-	
-	            this._tabService(tabId, {
-	                element: this._el.querySelectorAll('[data-tab-element="tab"]'),
-	
-	                success: function success(tabElementArray) {
-	                    tabElementArray.forEach(function (tab) {
-	                        tab.style.display = 'none';
-	                    });
-	
-	                    _this3._el.querySelector('[data-content-id=' + tabId + ']').style.display = 'block';
-	                }
-	            });
-	        }
-	
-	        //a general method for creating tabs
-	
-	    }, {
-	        key: '_tabService',
-	        value: function _tabService(tabId, options) {
-	            var tabElement = options.element;
-	
-	            var tabElementArray = Array.from(tabElement);
-	
-	            options.success(tabElementArray);
-	        }
-	    }, {
-	        key: '_getPrintElements',
-	        value: function _getPrintElements() {
-	            return this._prints;
-	        }
-	    }, {
-	        key: '_getElement',
-	        value: function _getElement() {
-	            return this._el;
-	        }
-	    }]);
-	
-	    return PagePrint;
-	}();
-	
-	module.exports = PagePrint;
-
-/***/ },
-/* 9 */
-/***/ function(module, exports) {
-
-	/**
-	 * Plugin Name: Print Constructor
-	 * Type plugin: single page application
-	 * Author: Orischenko Alexander
-	 */
-	
-	'use strict';
-	
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-	
-	var PageColor = function PageColor(options) {
-	    _classCallCheck(this, PageColor);
-	
-	    this._el = options.element;
-	};
-	
-	module.exports = PageColor;
-
-/***/ },
-/* 10 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/**
-	 * Plugin Name: Print Constructor
-	 * Type plugin: single page application
-	 * Author: Orischenko Alexander
-	 */
-	
-	'use strict';
-	
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-	
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-	
-	var compiledTemplate = __webpack_require__(32);
-	
-	var PageView = function () {
-	    function PageView(options) {
-	        _classCallCheck(this, PageView);
-	
-	        this._el = options.element;
-	    }
-	
-	    _createClass(PageView, [{
-	        key: '_render',
-	        value: function _render(item) {
-	            this._renderService(item, {
-	                element: this._el.querySelector('[data-element="base-print-container"]'),
-	
-	                success: function success(el) {
-	                    el.innerHTML = compiledTemplate({
-	                        item: item
-	                    });
-	                }
-	            });
-	        }
-	    }, {
-	        key: '_renderDrug',
-	        value: function _renderDrug(item) {
-	            this._renderService(item, {
-	                element: this._el.querySelector('[data-element="drop-print-container"]'),
-	
-	                success: function success(el) {
-	                    el.innerHTML += compiledTemplate({
-	                        item: item
-	                    });
-	                }
-	            });
-	        }
-	
-	        //a general method for creating viewer dom
-	
-	    }, {
-	        key: '_renderService',
-	        value: function _renderService(item, options) {
-	            var el = options.element;
-	
-	            options.success(el);
-	        }
-	    }, {
-	        key: '_getElement',
-	        value: function _getElement() {
-	            return this._el;
-	        }
-	    }]);
-	
-	    return PageView;
-	}();
-	
-	module.exports = PageView;
-
-/***/ },
-/* 11 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/**
-	 * Plugin Name: Print Constructor
-	 * Type plugin: single page application
-	 * Author: Orischenko Alexander
-	 */
-	
-	'use strict';
-	
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-	
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-	
-	var compiledTemplate = __webpack_require__(34);
-	
-	var PageLayers = function () {
-	    function PageLayers(options) {
-	        _classCallCheck(this, PageLayers);
-	
-	        this._el = options.element;
-	
-	        this._el.addEventListener('click', this._onLayerRemoveClick.bind(this));
-	        this._el.addEventListener('click', this._onLayerRotateClick.bind(this));
-	        this._el.addEventListener('click', this._onLayerUpClick.bind(this));
-	    }
-	
-	    _createClass(PageLayers, [{
-	        key: '_onLayerUpClick',
-	        value: function _onLayerUpClick() {
-	            var _this = this;
-	
-	            var path = '[data-element="up"]';
-	
-	            this._controllerService(path, {
-	                event: 'upButtonSelected',
-	
-	                success: function success() {
-	                    var layerArray = Array.from(_this._el.querySelectorAll('[data-element="layerContainer"]'));
-	
-	                    var parentElement = event.target.parentElement.parentElement.parentElement;
-	
-	                    layerArray.forEach(function (layer) {
-	                        layer.style.order = '0';
-	                    });
-	
-	                    parentElement.style.order = '3';
-	                }
-	            });
-	        }
-	    }, {
-	        key: '_onLayerRotateClick',
-	        value: function _onLayerRotateClick() {
-	            var path = '[data-element="rotate"]';
-	
-	            this._controllerService(path, {
-	                event: 'rotateButtonSelected'
-	            });
-	        }
-	    }, {
-	        key: '_onLayerRemoveClick',
-	        value: function _onLayerRemoveClick(event) {
-	            var path = '[data-element="remove-button"]';
-	
-	            this._controllerService(path, {
-	                event: 'removeButtonSelected',
-	
-	                success: function success() {
-	                    var parentElement = event.target.parentElement.parentElement;
-	
-	                    parentElement.remove('[data-element="layerContainer"]');
-	                }
-	            });
-	        }
-	
-	        //a general method for controller buttons
-	
-	    }, {
-	        key: '_controllerService',
-	        value: function _controllerService(path, options) {
-	            if (!event.target.closest(path)) return;
-	
-	            event.preventDefault();
-	
-	            var layerContainer = event.target.closest('[data-element="layerContainer"]');
-	
-	            if (options.success) {
-	                options.success();
-	            }
-	
-	            var customEvent = new CustomEvent(options.event, {
-	                detail: layerContainer.dataset.layerId
-	            });
-	
-	            this._el.dispatchEvent(customEvent);
-	        }
-	    }, {
-	        key: '_render',
-	        value: function _render(print) {
-	            this._el.innerHTML += compiledTemplate({
-	                print: print
-	            });
-	        }
-	    }, {
-	        key: '_getElement',
-	        value: function _getElement() {
-	            return this._el;
-	        }
-	    }]);
-	
-	    return PageLayers;
-	}();
-	
-	module.exports = PageLayers;
-
-/***/ },
-/* 12 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var Handlebars = __webpack_require__(13);
+	var Handlebars = __webpack_require__(9);
 	function __default(obj) { return obj && (obj.__esModule ? obj["default"] : obj); }
 	module.exports = (Handlebars["default"] || Handlebars).template({"1":function(container,depth0,helpers,partials,data) {
 	    var alias1=container.lambda, alias2=container.escapeExpression;
@@ -1109,16 +764,16 @@
 	},"useData":true});
 
 /***/ },
-/* 13 */
+/* 9 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// Create a simple path alias to allow browserify to resolve
 	// the runtime on a supported path.
-	module.exports = __webpack_require__(14)['default'];
+	module.exports = __webpack_require__(10)['default'];
 
 
 /***/ },
-/* 14 */
+/* 10 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -1132,30 +787,30 @@
 	
 	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj['default'] = obj; return newObj; } }
 	
-	var _handlebarsBase = __webpack_require__(15);
+	var _handlebarsBase = __webpack_require__(11);
 	
 	var base = _interopRequireWildcard(_handlebarsBase);
 	
 	// Each of these augment the Handlebars object. No need to setup here.
 	// (This is done to easily share code between commonjs and browse envs)
 	
-	var _handlebarsSafeString = __webpack_require__(29);
+	var _handlebarsSafeString = __webpack_require__(25);
 	
 	var _handlebarsSafeString2 = _interopRequireDefault(_handlebarsSafeString);
 	
-	var _handlebarsException = __webpack_require__(17);
+	var _handlebarsException = __webpack_require__(13);
 	
 	var _handlebarsException2 = _interopRequireDefault(_handlebarsException);
 	
-	var _handlebarsUtils = __webpack_require__(16);
+	var _handlebarsUtils = __webpack_require__(12);
 	
 	var Utils = _interopRequireWildcard(_handlebarsUtils);
 	
-	var _handlebarsRuntime = __webpack_require__(30);
+	var _handlebarsRuntime = __webpack_require__(26);
 	
 	var runtime = _interopRequireWildcard(_handlebarsRuntime);
 	
-	var _handlebarsNoConflict = __webpack_require__(31);
+	var _handlebarsNoConflict = __webpack_require__(27);
 	
 	var _handlebarsNoConflict2 = _interopRequireDefault(_handlebarsNoConflict);
 	
@@ -1190,7 +845,7 @@
 
 
 /***/ },
-/* 15 */
+/* 11 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -1201,17 +856,17 @@
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 	
-	var _utils = __webpack_require__(16);
+	var _utils = __webpack_require__(12);
 	
-	var _exception = __webpack_require__(17);
+	var _exception = __webpack_require__(13);
 	
 	var _exception2 = _interopRequireDefault(_exception);
 	
-	var _helpers = __webpack_require__(18);
+	var _helpers = __webpack_require__(14);
 	
-	var _decorators = __webpack_require__(26);
+	var _decorators = __webpack_require__(22);
 	
-	var _logger = __webpack_require__(28);
+	var _logger = __webpack_require__(24);
 	
 	var _logger2 = _interopRequireDefault(_logger);
 	
@@ -1300,7 +955,7 @@
 
 
 /***/ },
-/* 16 */
+/* 12 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -1430,7 +1085,7 @@
 
 
 /***/ },
-/* 17 */
+/* 13 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -1487,7 +1142,7 @@
 
 
 /***/ },
-/* 18 */
+/* 14 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -1498,31 +1153,31 @@
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 	
-	var _helpersBlockHelperMissing = __webpack_require__(19);
+	var _helpersBlockHelperMissing = __webpack_require__(15);
 	
 	var _helpersBlockHelperMissing2 = _interopRequireDefault(_helpersBlockHelperMissing);
 	
-	var _helpersEach = __webpack_require__(20);
+	var _helpersEach = __webpack_require__(16);
 	
 	var _helpersEach2 = _interopRequireDefault(_helpersEach);
 	
-	var _helpersHelperMissing = __webpack_require__(21);
+	var _helpersHelperMissing = __webpack_require__(17);
 	
 	var _helpersHelperMissing2 = _interopRequireDefault(_helpersHelperMissing);
 	
-	var _helpersIf = __webpack_require__(22);
+	var _helpersIf = __webpack_require__(18);
 	
 	var _helpersIf2 = _interopRequireDefault(_helpersIf);
 	
-	var _helpersLog = __webpack_require__(23);
+	var _helpersLog = __webpack_require__(19);
 	
 	var _helpersLog2 = _interopRequireDefault(_helpersLog);
 	
-	var _helpersLookup = __webpack_require__(24);
+	var _helpersLookup = __webpack_require__(20);
 	
 	var _helpersLookup2 = _interopRequireDefault(_helpersLookup);
 	
-	var _helpersWith = __webpack_require__(25);
+	var _helpersWith = __webpack_require__(21);
 	
 	var _helpersWith2 = _interopRequireDefault(_helpersWith);
 	
@@ -1539,14 +1194,14 @@
 
 
 /***/ },
-/* 19 */
+/* 15 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
 	exports.__esModule = true;
 	
-	var _utils = __webpack_require__(16);
+	var _utils = __webpack_require__(12);
 	
 	exports['default'] = function (instance) {
 	  instance.registerHelper('blockHelperMissing', function (context, options) {
@@ -1584,7 +1239,7 @@
 
 
 /***/ },
-/* 20 */
+/* 16 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -1594,9 +1249,9 @@
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 	
-	var _utils = __webpack_require__(16);
+	var _utils = __webpack_require__(12);
 	
-	var _exception = __webpack_require__(17);
+	var _exception = __webpack_require__(13);
 	
 	var _exception2 = _interopRequireDefault(_exception);
 	
@@ -1684,7 +1339,7 @@
 
 
 /***/ },
-/* 21 */
+/* 17 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -1694,7 +1349,7 @@
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 	
-	var _exception = __webpack_require__(17);
+	var _exception = __webpack_require__(13);
 	
 	var _exception2 = _interopRequireDefault(_exception);
 	
@@ -1715,14 +1370,14 @@
 
 
 /***/ },
-/* 22 */
+/* 18 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
 	exports.__esModule = true;
 	
-	var _utils = __webpack_require__(16);
+	var _utils = __webpack_require__(12);
 	
 	exports['default'] = function (instance) {
 	  instance.registerHelper('if', function (conditional, options) {
@@ -1750,7 +1405,7 @@
 
 
 /***/ },
-/* 23 */
+/* 19 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -1782,7 +1437,7 @@
 
 
 /***/ },
-/* 24 */
+/* 20 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -1800,14 +1455,14 @@
 
 
 /***/ },
-/* 25 */
+/* 21 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
 	exports.__esModule = true;
 	
-	var _utils = __webpack_require__(16);
+	var _utils = __webpack_require__(12);
 	
 	exports['default'] = function (instance) {
 	  instance.registerHelper('with', function (context, options) {
@@ -1839,7 +1494,7 @@
 
 
 /***/ },
-/* 26 */
+/* 22 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -1850,7 +1505,7 @@
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 	
-	var _decoratorsInline = __webpack_require__(27);
+	var _decoratorsInline = __webpack_require__(23);
 	
 	var _decoratorsInline2 = _interopRequireDefault(_decoratorsInline);
 	
@@ -1861,14 +1516,14 @@
 
 
 /***/ },
-/* 27 */
+/* 23 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
 	exports.__esModule = true;
 	
-	var _utils = __webpack_require__(16);
+	var _utils = __webpack_require__(12);
 	
 	exports['default'] = function (instance) {
 	  instance.registerDecorator('inline', function (fn, props, container, options) {
@@ -1896,14 +1551,14 @@
 
 
 /***/ },
-/* 28 */
+/* 24 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
 	exports.__esModule = true;
 	
-	var _utils = __webpack_require__(16);
+	var _utils = __webpack_require__(12);
 	
 	var logger = {
 	  methodMap: ['debug', 'info', 'warn', 'error'],
@@ -1949,7 +1604,7 @@
 
 
 /***/ },
-/* 29 */
+/* 25 */
 /***/ function(module, exports) {
 
 	// Build out our basic SafeString type
@@ -1970,7 +1625,7 @@
 
 
 /***/ },
-/* 30 */
+/* 26 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -1990,15 +1645,15 @@
 	
 	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj['default'] = obj; return newObj; } }
 	
-	var _utils = __webpack_require__(16);
+	var _utils = __webpack_require__(12);
 	
 	var Utils = _interopRequireWildcard(_utils);
 	
-	var _exception = __webpack_require__(17);
+	var _exception = __webpack_require__(13);
 	
 	var _exception2 = _interopRequireDefault(_exception);
 	
-	var _base = __webpack_require__(15);
+	var _base = __webpack_require__(11);
 	
 	function checkRevision(compilerInfo) {
 	  var compilerRevision = compilerInfo && compilerInfo[0] || 1,
@@ -2273,7 +1928,7 @@
 
 
 /***/ },
-/* 31 */
+/* 27 */
 /***/ function(module, exports) {
 
 	/* WEBPACK VAR INJECTION */(function(global) {/* global window */
@@ -2300,26 +1955,158 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
-/* 32 */
+/* 28 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var Handlebars = __webpack_require__(13);
-	function __default(obj) { return obj && (obj.__esModule ? obj["default"] : obj); }
-	module.exports = (Handlebars["default"] || Handlebars).template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
-	    var stack1, alias1=container.lambda, alias2=container.escapeExpression;
+	/**
+	 * Plugin Name: Print Constructor
+	 * Type plugin: single page application
+	 * Author: Orischenko Alexander
+	 */
 	
-	  return "<figure data-element=\"viewContainer\" data-view-id=\""
-	    + alias2(alias1(((stack1 = (depth0 != null ? depth0.item : depth0)) != null ? stack1.id : stack1), depth0))
-	    + "\">\n    <img alt=\"<%=item.id%>\" src=\""
-	    + alias2(alias1(((stack1 = (depth0 != null ? depth0.item : depth0)) != null ? stack1.imageUrl : stack1), depth0))
-	    + "\">\n</figure>";
-	},"useData":true});
+	'use strict';
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	var compiledTemplate = __webpack_require__(29);
+	
+	var PagePrint = function () {
+	    function PagePrint(options) {
+	        _classCallCheck(this, PagePrint);
+	
+	        this._el = options.element;
+	
+	        this._prints = options.prints;
+	
+	        this._el.addEventListener('click', this._onTabLinkClick.bind(this));
+	    }
+	
+	    _createClass(PagePrint, [{
+	        key: '_onTabLinkClick',
+	        value: function _onTabLinkClick(event) {
+	            if (!event.target.closest('[data-tab-element="tabLink"]')) {
+	                return;
+	            }
+	
+	            event.preventDefault();
+	
+	            var tabLink = event.target.closest('[data-tab-element="tabLink"]');
+	
+	            var customEvent = new CustomEvent('tabSelected', {
+	                detail: tabLink.dataset.tabId
+	            });
+	
+	            this._el.dispatchEvent(customEvent);
+	        }
+	    }, {
+	        key: '_setPrintImagesEvent',
+	        value: function _setPrintImagesEvent() {
+	            var _this = this;
+	
+	            var projects = this._el.querySelector('[data-element="printImages"]');
+	
+	            projects.addEventListener('click', function (event) {
+	                if (!event.target.closest('[data-element="printLink"]')) {
+	                    return;
+	                }
+	
+	                event.preventDefault();
+	
+	                var printContainer = event.target.closest('[data-element="printContainer"]');
+	
+	                printContainer.classList.add('active');
+	
+	                var customEvent = new CustomEvent('printSelected', {
+	                    detail: printContainer.dataset.printId
+	                });
+	
+	                _this._el.dispatchEvent(customEvent);
+	            });
+	        }
+	    }, {
+	        key: '_render',
+	        value: function _render(prints) {
+	            this._el.innerHTML += compiledTemplate({
+	                prints: prints
+	            });
+	        }
+	    }, {
+	        key: '_setButtonTabClass',
+	        value: function _setButtonTabClass(tabId) {
+	            var _this2 = this;
+	
+	            this._tabService(tabId, {
+	                element: this._el.querySelectorAll('[data-tab-element="tabLink"]'),
+	
+	                success: function success(tabElementArray) {
+	                    tabElementArray.forEach(function (button) {
+	                        button.classList.remove('active');
+	                    });
+	
+	                    _this2._el.querySelector('[data-tab-id=' + tabId + ']').classList.add('active');
+	                }
+	            });
+	        }
+	    }, {
+	        key: '_setTabContent',
+	        value: function _setTabContent(tabId) {
+	            var _this3 = this;
+	
+	            this._tabService(tabId, {
+	                element: this._el.querySelectorAll('[data-tab-element="tab"]'),
+	
+	                success: function success(tabElementArray) {
+	                    tabElementArray.forEach(function (tab) {
+	                        tab.style.display = 'none';
+	                    });
+	
+	                    _this3._el.querySelector('[data-content-id=' + tabId + ']').style.display = 'block';
+	                }
+	            });
+	        }
+	
+	        //a general method for creating tabs
+	
+	    }, {
+	        key: '_tabService',
+	        value: function _tabService(tabId, options) {
+	            var tabElement = options.element;
+	
+	            var tabElementArray = Array.from(tabElement);
+	
+	            options.success(tabElementArray);
+	        }
+	    }, {
+	        key: '_getInputValue',
+	        value: function _getInputValue() {
+	            var field = this._el.querySelector('[data-element="field"]');
+	
+	            return field.value;
+	        }
+	    }, {
+	        key: '_getPrintElements',
+	        value: function _getPrintElements() {
+	            return this._prints;
+	        }
+	    }, {
+	        key: '_getElement',
+	        value: function _getElement() {
+	            return this._el;
+	        }
+	    }]);
+	
+	    return PagePrint;
+	}();
+	
+	module.exports = PagePrint;
 
 /***/ },
-/* 33 */
+/* 29 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var Handlebars = __webpack_require__(13);
+	var Handlebars = __webpack_require__(9);
 	function __default(obj) { return obj && (obj.__esModule ? obj["default"] : obj); }
 	module.exports = (Handlebars["default"] || Handlebars).template({"1":function(container,depth0,helpers,partials,data) {
 	    var alias1=container.lambda, alias2=container.escapeExpression;
@@ -2342,10 +2129,249 @@
 	},"useData":true});
 
 /***/ },
+/* 30 */
+/***/ function(module, exports) {
+
+	/**
+	 * Plugin Name: Print Constructor
+	 * Type plugin: single page application
+	 * Author: Orischenko Alexander
+	 */
+	
+	'use strict';
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	var PageColor = function PageColor(options) {
+	    _classCallCheck(this, PageColor);
+	
+	    this._el = options.element;
+	};
+	
+	module.exports = PageColor;
+
+/***/ },
+/* 31 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/**
+	 * Plugin Name: Print Constructor
+	 * Type plugin: single page application
+	 * Author: Orischenko Alexander
+	 */
+	
+	'use strict';
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	var compiledTemplate = __webpack_require__(32);
+	
+	var PageView = function () {
+	    function PageView(options) {
+	        _classCallCheck(this, PageView);
+	
+	        this._el = options.element;
+	    }
+	
+	    _createClass(PageView, [{
+	        key: '_render',
+	        value: function _render(item) {
+	            this._renderService(item, {
+	                element: this._el.querySelector('[data-element="base-print-container"]'),
+	
+	                success: function success(el) {
+	                    el.innerHTML = compiledTemplate({
+	                        item: item
+	                    });
+	                }
+	            });
+	        }
+	    }, {
+	        key: '_renderDrugText',
+	        value: function _renderDrugText(inputValue) {
+	            this._renderService(inputValue, {
+	                element: this._el.querySelector('[data-element="drop-text-container"]'),
+	
+	                success: function success(el) {
+	                    el.innerHTML = '<h3>' + inputValue + '</h3>';
+	                }
+	            });
+	        }
+	    }, {
+	        key: '_renderDrug',
+	        value: function _renderDrug(item) {
+	            this._renderService(item, {
+	                element: this._el.querySelector('[data-element="drop-print-container"]'),
+	
+	                success: function success(el) {
+	                    el.innerHTML += compiledTemplate({
+	                        item: item
+	                    });
+	                }
+	            });
+	        }
+	
+	        //a general method for creating viewer dom
+	
+	    }, {
+	        key: '_renderService',
+	        value: function _renderService(item, options) {
+	            var el = options.element;
+	
+	            options.success(el);
+	        }
+	    }, {
+	        key: '_getElement',
+	        value: function _getElement() {
+	            return this._el;
+	        }
+	    }]);
+	
+	    return PageView;
+	}();
+	
+	module.exports = PageView;
+
+/***/ },
+/* 32 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var Handlebars = __webpack_require__(9);
+	function __default(obj) { return obj && (obj.__esModule ? obj["default"] : obj); }
+	module.exports = (Handlebars["default"] || Handlebars).template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
+	    var stack1, alias1=container.lambda, alias2=container.escapeExpression;
+	
+	  return "<figure data-element=\"viewContainer\" data-view-id=\""
+	    + alias2(alias1(((stack1 = (depth0 != null ? depth0.item : depth0)) != null ? stack1.id : stack1), depth0))
+	    + "\">\n    <img alt=\"<%=item.id%>\" src=\""
+	    + alias2(alias1(((stack1 = (depth0 != null ? depth0.item : depth0)) != null ? stack1.imageUrl : stack1), depth0))
+	    + "\">\n</figure>";
+	},"useData":true});
+
+/***/ },
+/* 33 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/**
+	 * Plugin Name: Print Constructor
+	 * Type plugin: single page application
+	 * Author: Orischenko Alexander
+	 */
+	
+	'use strict';
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	var compiledTemplate = __webpack_require__(34);
+	
+	var PageLayers = function () {
+	    function PageLayers(options) {
+	        _classCallCheck(this, PageLayers);
+	
+	        this._el = options.element;
+	
+	        this._el.addEventListener('click', this._onLayerRemoveClick.bind(this));
+	        this._el.addEventListener('click', this._onLayerRotateClick.bind(this));
+	        this._el.addEventListener('click', this._onLayerUpClick.bind(this));
+	    }
+	
+	    _createClass(PageLayers, [{
+	        key: '_onLayerUpClick',
+	        value: function _onLayerUpClick() {
+	            var _this = this;
+	
+	            var path = '[data-element="up"]';
+	
+	            this._controllerService(path, {
+	                event: 'upButtonSelected',
+	
+	                success: function success() {
+	                    var layerArray = Array.from(_this._el.querySelectorAll('[data-element="layerContainer"]'));
+	
+	                    var parentElement = event.target.parentElement.parentElement.parentElement;
+	
+	                    layerArray.forEach(function (layer) {
+	                        layer.style.order = '0';
+	                    });
+	
+	                    parentElement.style.order = '3';
+	                }
+	            });
+	        }
+	    }, {
+	        key: '_onLayerRotateClick',
+	        value: function _onLayerRotateClick() {
+	            var path = '[data-element="rotate"]';
+	
+	            this._controllerService(path, {
+	                event: 'rotateButtonSelected'
+	            });
+	        }
+	    }, {
+	        key: '_onLayerRemoveClick',
+	        value: function _onLayerRemoveClick(event) {
+	            var path = '[data-element="remove-button"]';
+	
+	            this._controllerService(path, {
+	                event: 'removeButtonSelected',
+	
+	                success: function success() {
+	                    var parentElement = event.target.parentElement.parentElement;
+	
+	                    parentElement.remove('[data-element="layerContainer"]');
+	                }
+	            });
+	        }
+	
+	        //a general method for controller buttons
+	
+	    }, {
+	        key: '_controllerService',
+	        value: function _controllerService(path, options) {
+	            if (!event.target.closest(path)) return;
+	
+	            event.preventDefault();
+	
+	            var layerContainer = event.target.closest('[data-element="layerContainer"]');
+	
+	            if (options.success) {
+	                options.success();
+	            }
+	
+	            var customEvent = new CustomEvent(options.event, {
+	                detail: layerContainer.dataset.layerId
+	            });
+	
+	            this._el.dispatchEvent(customEvent);
+	        }
+	    }, {
+	        key: '_render',
+	        value: function _render(print) {
+	            this._el.innerHTML += compiledTemplate({
+	                print: print
+	            });
+	        }
+	    }, {
+	        key: '_getElement',
+	        value: function _getElement() {
+	            return this._el;
+	        }
+	    }]);
+	
+	    return PageLayers;
+	}();
+	
+	module.exports = PageLayers;
+
+/***/ },
 /* 34 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var Handlebars = __webpack_require__(13);
+	var Handlebars = __webpack_require__(9);
 	function __default(obj) { return obj && (obj.__esModule ? obj["default"] : obj); }
 	module.exports = (Handlebars["default"] || Handlebars).template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
 	    var stack1, alias1=container.lambda, alias2=container.escapeExpression;

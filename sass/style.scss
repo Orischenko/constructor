@@ -86,6 +86,10 @@ input {
     overflow-x: auto;
     display: flex;
     flex-direction: column-reverse;
+
+    h6 {
+      order: 4;
+    }
   }
 }
 
@@ -131,7 +135,7 @@ ul {
 .viewContainer {
   position: relative;
 
-  #drop-print-container {
+  #drop-print-container, #drop-text-container {
     position: absolute;
     top: 85px;
     bottom: 40px;
@@ -144,6 +148,12 @@ ul {
       left: 0;
       //transform: translateY(-50%);
     }
+  }
+
+  #drop-text-container {
+    text-align: center;
+    z-index: 9999;
+    color: $itemColorPrimary;
   }
 }
 

@@ -98,6 +98,12 @@ class PagePrint{
         options.success(tabElementArray);
     }
 
+    _getInputValue() {
+        let field = this._el.querySelector('[data-element="field"]');
+
+        return field.value;
+    }
+
     _getPrintElements() {
         return this._prints;
     }

@@ -103,6 +103,13 @@ class PageController{
         this._layers._getElement().addEventListener('removeButtonSelected', this._onRemoveButtonSelected.bind(this));
         this._layers._getElement().addEventListener('rotateButtonSelected', this._onRotateButtonSelected.bind(this));
         this._layers._getElement().addEventListener('upButtonSelected', this._onUpButtonSelected.bind(this));
+        this._print._getElement().addEventListener('input', this._onInputChanged.bind(this));
+    }
+
+    _onInputChanged() {
+        let inputValue = this._print._getInputValue();
+
+        this._view._renderDrugText(inputValue);
     }
 
     _onUpButtonSelected(event) {
@@ -114,7 +121,7 @@ class PageController{
             layer.style.zIndex = '0';
         });
 
-        this._getViewByIdOnClickController(layerId).style.zIndex = '9999';
+        this._getViewByIdOnClickController(layerId).style.zIndex = '999';
     }
 
     _onRotateButtonSelected(event) {

@@ -25,6 +25,16 @@ class PageView{
         });
     }
 
+    _renderDrugText(inputValue) {
+        this._renderService(inputValue, {
+            element: this._el.querySelector('[data-element="drop-text-container"]'),
+
+            success: (el) => {
+                el.innerHTML = `<h3>${inputValue}</h3>`;
+            }
+        });
+    }
+
     _renderDrug(item) {
         this._renderService(item, {
             element: this._el.querySelector('[data-element="drop-print-container"]'),
